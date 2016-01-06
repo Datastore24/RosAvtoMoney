@@ -35,6 +35,7 @@
 		77D0D1ED1C2F1D4600875F19 /* CreateFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0D1EC1C2F1D4600875F19 /* CreateFormViewController.m */; };
 		77D0D1F11C2F22F300875F19 /* PushApplication.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1F01C2F22F300875F19 /* PushApplication.png */; };
 		ADD6A3071C3D649000C4FFC5 /* topBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD6A3061C3D649000C4FFC5 /* topBarImage.png */; };
+		ADD6A30B1C3D7D9000C4FFC5 /* APIClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6A30A1C3D7D9000C4FFC5 /* APIClass.m */; };
 		E9A8F845C6E36B5398C1C029 /* libPods-RosAvtoDengi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,8 @@
 		77D0D1F01C2F22F300875F19 /* PushApplication.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PushApplication.png; sourceTree = "<group>"; };
 		9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RosAvtoDengi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD6A3061C3D649000C4FFC5 /* topBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarImage.png; sourceTree = "<group>"; };
+		ADD6A3091C3D7D9000C4FFC5 /* APIClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClass.h; sourceTree = "<group>"; };
+		ADD6A30A1C3D7D9000C4FFC5 /* APIClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,7 @@
 		7794B94C1C2DEA6100531B50 /* RosAvtoDengi */ = {
 			isa = PBXGroup;
 			children = (
+				ADD6A3081C3D7CD900C4FFC5 /* API */,
 				7745287A1C2E0B0700209FE2 /* Filials */,
 				774528761C2E075B00209FE2 /* Online */,
 				774528751C2E074D00209FE2 /* Services */,
@@ -265,6 +269,15 @@
 				9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADD6A3081C3D7CD900C4FFC5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ADD6A3091C3D7D9000C4FFC5 /* APIClass.h */,
+				ADD6A30A1C3D7D9000C4FFC5 /* APIClass.m */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,6 +489,7 @@
 				7794B9521C2DEA6100531B50 /* AppDelegate.m in Sources */,
 				7745286B1C2E00D000209FE2 /* ServicesViewController.m in Sources */,
 				7794B94F1C2DEA6100531B50 /* main.m in Sources */,
+				ADD6A30B1C3D7D9000C4FFC5 /* APIClass.m in Sources */,
 				773A9B191C300C160014A02E /* FotoViewController.m in Sources */,
 				774528791C2E077500209FE2 /* OnlineViewController.m in Sources */,
 			);

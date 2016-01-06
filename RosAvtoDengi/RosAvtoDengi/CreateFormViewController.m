@@ -9,6 +9,8 @@
 #import "CreateFormViewController.h"
 #import <AKPickerView/AKPickerView.h>
 
+#import "APIClass.h"
+
 static const CGFloat KEYBOARD_ANIMATION_DURATION = 0.3;
 static const CGFloat MINIMUM_SCROLL_FRACTION = 0.2;
 static const CGFloat MAXIMUM_SCROLL_FRACTION = 0.8;
@@ -120,8 +122,46 @@ CGFloat animatedDistance;
 - (void) buttonPushAplicationAction
 {
     NSLog(@"Отправляем данные на сервер");
-    [self.navigationController popViewControllerAnimated:YES];
+    //Выдергиваем данные из PickerView
+    NSUInteger selectedRow = [self.mainPickerView selectedRowInComponent:0];
+    NSString * title = [[self.mainPickerView delegate] pickerView:self.mainPickerView titleForRow:selectedRow forComponent:0];
+    
+    //
+    
+    
+    NSDictionary* params = [[NSDictionary alloc] initWithObjectsAndKeys:
+                            self.textField1.text, @"fio",
+                            self.textField2.text, @"birthday",
+                            title,@"region",
+                            self.textField4.text, @"model",
+                            self.textField5.text, @"marka",
+                            self.textField6.text, @"year",
+                            self.textField7.text, @"phone",
+                            self.textField8.text, @"summ",
+           
+                            nil];
+    [self postApiOrder:params];
+    
 }
+
+- (void)postApiOrder:(NSDictionary*) params
+{
+   
+    
+    APIClass* api = [APIClass new]; //создаем API
+    [api postDataToServerWithParams:params
+                             method:@"action=send_form"
+                    complitionBlock:^(id response) {
+                        NSDictionary* dict = (NSDictionary*)response;
+                        if ([[dict objectForKey:@"error"] integerValue] == 0) {
+                            [self.navigationController popViewControllerAnimated:YES];
+                        }
+                        else {
+                            NSLog(@"ERROR");
+                        }
+                    }];
+}
+
 
 
 #pragma mark - UITextFieldDelegate ViewDelegate Methods
