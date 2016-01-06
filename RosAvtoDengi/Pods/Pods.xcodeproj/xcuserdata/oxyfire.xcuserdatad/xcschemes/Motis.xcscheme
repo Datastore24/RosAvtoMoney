@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AC64D2B16D3E11FC3888304A'
+               BlueprintIdentifier = '4F1F0E5220CB80BFD7500E08'
                BlueprintName = 'Motis'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMotis.a'>

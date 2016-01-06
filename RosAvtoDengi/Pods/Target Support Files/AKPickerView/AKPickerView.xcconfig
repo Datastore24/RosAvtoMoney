@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AKPickerView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AKPickerView" "${PODS_ROOT}/Headers/Public/DWBubbleMenuButton" "${PODS_ROOT}/Headers/Public/Motis"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AKPickerView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AKPickerView" "${PODS_ROOT}/Headers/Public/DWBubbleMenuButton" "${PODS_ROOT}/Headers/Public/GoogleMaps" "${PODS_ROOT}/Headers/Public/Motis"
 OTHER_LDFLAGS = -framework "QuartzCore"
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES
