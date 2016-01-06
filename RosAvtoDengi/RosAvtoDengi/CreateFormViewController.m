@@ -121,7 +121,7 @@ CGFloat animatedDistance;
 
 - (void) buttonPushAplicationAction
 {
-    NSLog(@"Отправляем данные на сервер");
+
     //Выдергиваем данные из PickerView
     NSUInteger selectedRow = [self.mainPickerView selectedRowInComponent:0];
     NSString * title = [[self.mainPickerView delegate] pickerView:self.mainPickerView titleForRow:selectedRow forComponent:0];
@@ -153,6 +153,7 @@ CGFloat animatedDistance;
                              method:@"action=send_form"
                     complitionBlock:^(id response) {
                         NSDictionary* dict = (NSDictionary*)response;
+                        NSLog(@"%@",dict);
                         if ([[dict objectForKey:@"error"] integerValue] == 0) {
                             [self.navigationController popViewControllerAnimated:YES];
                         }
