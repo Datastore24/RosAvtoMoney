@@ -27,7 +27,6 @@
 		7794B95D1C2DEA6100531B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7794B95B1C2DEA6100531B50 /* LaunchScreen.storyboard */; };
 		7794B9681C2DEA6100531B50 /* RosAvtoDengiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9671C2DEA6100531B50 /* RosAvtoDengiTests.m */; };
 		7794B9731C2DEA6100531B50 /* RosAvtoDengiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */; };
-		77B24DFC1C3AA17000ED9322 /* topBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B24DFB1C3AA17000ED9322 /* topBarImage.png */; };
 		77B24DFE1C3AA1A300ED9322 /* downBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B24DFD1C3AA1A300ED9322 /* downBarImage.png */; };
 		77D0D1E21C2F142C00875F19 /* imageButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E11C2F142C00875F19 /* imageButtonBack.png */; };
 		77D0D1E61C2F171400875F19 /* button2Online.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E51C2F171400875F19 /* button2Online.png */; };
@@ -35,6 +34,7 @@
 		77D0D1EA1C2F1C0D00875F19 /* PTSImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E91C2F1C0D00875F19 /* PTSImage.png */; };
 		77D0D1ED1C2F1D4600875F19 /* CreateFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0D1EC1C2F1D4600875F19 /* CreateFormViewController.m */; };
 		77D0D1F11C2F22F300875F19 /* PushApplication.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1F01C2F22F300875F19 /* PushApplication.png */; };
+		ADD6A3071C3D649000C4FFC5 /* topBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD6A3061C3D649000C4FFC5 /* topBarImage.png */; };
 		E9A8F845C6E36B5398C1C029 /* libPods-RosAvtoDengi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +90,6 @@
 		7794B96E1C2DEA6100531B50 /* RosAvtoDengiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosAvtoDengiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiUITests.m; sourceTree = "<group>"; };
 		7794B9741C2DEA6100531B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77B24DFB1C3AA17000ED9322 /* topBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = topBarImage.png; path = "../../../РАД/topBarImage.png"; sourceTree = "<group>"; };
 		77B24DFD1C3AA1A300ED9322 /* downBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downBarImage.png; sourceTree = "<group>"; };
 		77D0D1E11C2F142C00875F19 /* imageButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageButtonBack.png; sourceTree = "<group>"; };
 		77D0D1E51C2F171400875F19 /* button2Online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2Online.png; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		77D0D1EC1C2F1D4600875F19 /* CreateFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateFormViewController.m; sourceTree = "<group>"; };
 		77D0D1F01C2F22F300875F19 /* PushApplication.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PushApplication.png; sourceTree = "<group>"; };
 		9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RosAvtoDengi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD6A3061C3D649000C4FFC5 /* topBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				77B24DFD1C3AA1A300ED9322 /* downBarImage.png */,
-				77B24DFB1C3AA17000ED9322 /* topBarImage.png */,
+				ADD6A3061C3D649000C4FFC5 /* topBarImage.png */,
 				77D0D1F01C2F22F300875F19 /* PushApplication.png */,
 				77D0D1E91C2F1C0D00875F19 /* PTSImage.png */,
 				77D0D1E71C2F1C0800875F19 /* CreateForm.png */,
@@ -395,7 +395,7 @@
 				77D0D1EA1C2F1C0D00875F19 /* PTSImage.png in Resources */,
 				773A9B1D1C300FA50014A02E /* post.png in Resources */,
 				77D0D1E81C2F1C0800875F19 /* CreateForm.png in Resources */,
-				77B24DFC1C3AA17000ED9322 /* topBarImage.png in Resources */,
+				ADD6A3071C3D649000C4FFC5 /* topBarImage.png in Resources */,
 				774528811C2E10C900209FE2 /* callImage.png in Resources */,
 				773A9B1C1C300FA50014A02E /* createFotoImage.png in Resources */,
 			);
