@@ -9,6 +9,9 @@
 #import "FotoViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
+#import <AFHTTPRequestOperation.h>
+#import <AFHTTPRequestOperationManager.h>
+
 @interface FotoViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *buttonCreateFoto;
 @property (weak, nonatomic) IBOutlet UIView *frameFotoCapture;
@@ -112,6 +115,7 @@
             self.buttonCreateFoto.backgroundColor = [UIColor clearColor];
             self.fotoImage = [UIImage imageWithData:imageData];
             self.imageView.image = self.fotoImage;
+            [self uploadImage:self.fotoImage];
         }
         
     }];
@@ -137,6 +141,31 @@
 - (void) postButtonAction
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)uploadImage: (UIImage *) imageData
+{
+    
+    NSString *stringUrl = [ NSString stringWithFormat:@"http://itdolgopa.ru/ios/RosAvtoDengi/uploader.php"];
+    NSData *imageLoad = UIImageJPEGRepresentation(imageData,0.2);
+    
+    
+    NSDictionary *parameters  = [NSDictionary dictionaryWithObjectsAndKeys:@"1",@"id", nil];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
+    [manager POST:stringUrl parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
+     {
+         [formData appendPartWithFileData:imageLoad name:@"userfile" fileName:@"photo.jpg" mimeType:@"image/jpeg"];
+         
+     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+         NSLog(@"Success: %@ ***** %@", operation.responseString, responseObject);
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+         NSLog(@"Error: %@ ***** %@", operation.responseString, error);
+     }];
 }
 
 @end
