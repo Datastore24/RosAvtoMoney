@@ -8,12 +8,14 @@
 
 #import "FotoViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "PostFotoViewController.h"
 
 @interface FotoViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *buttonCreateFoto;
 @property (weak, nonatomic) IBOutlet UIView *frameFotoCapture;
 @property (strong, nonatomic) UIImage * fotoImage;
+
+@property (weak, nonatomic) IBOutlet UIButton *createFotoButton; //Кнопка переснять
+@property (weak, nonatomic) IBOutlet UIButton *postButton; //Кнопка отправить
 
 
 
@@ -27,6 +29,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    self.createFotoButton.alpha = 0.f;
+    [self.createFotoButton addTarget:self action:@selector(createFotoButtonAction)
+                    forControlEvents:UIControlEventTouchUpInside];
+    
+    self.postButton.alpha = 0.f;
+    [self.postButton addTarget:self action:@selector(postButtonAction)
+              forControlEvents:UIControlEventTouchUpInside];
+    self.buttonCreateFoto.backgroundColor = [UIColor yellowColor];
+    
+    self.imageView.frame = CGRectMake(20, 117, 280, 280);
+    self.imageView.alpha = 0.f;
+    self.frameFotoCapture.alpha = 1.f;
 
     [self.buttonCreateFoto addTarget:self action:@selector(buttonCreateFotoAction)
               forControlEvents:UIControlEventTouchUpInside];
@@ -93,14 +109,34 @@
     [stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
         if (imageDataSampleBuffer != NULL) {
             NSData * imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+            self.buttonCreateFoto.backgroundColor = [UIColor clearColor];
             self.fotoImage = [UIImage imageWithData:imageData];
             self.imageView.image = self.fotoImage;
         }
         
     }];
     
-//    PostFotoViewController * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"PostFotoViewController"];
-//    [self.navigationController pushViewController:detail animated:YES];
+    self.frameFotoCapture.alpha = 0.f;
+    self.imageView.alpha = 1.f;
+    self.createFotoButton.alpha = 1.f;
+    self.postButton.alpha = 1.f;
+    self.buttonCreateFoto.alpha = 0.f;
+    
+}
+
+- (void) createFotoButtonAction
+{
+    self.frameFotoCapture.alpha = 1.f;
+    self.imageView.alpha = 0.f;
+    self.createFotoButton.alpha = 0.f;
+    self.postButton.alpha = 0.f;
+    self.buttonCreateFoto.alpha = 1.f;
+     self.buttonCreateFoto.backgroundColor = [UIColor yellowColor];
+}
+
+- (void) postButtonAction
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

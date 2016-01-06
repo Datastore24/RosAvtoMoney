@@ -27,7 +27,6 @@
 		7794B95D1C2DEA6100531B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7794B95B1C2DEA6100531B50 /* LaunchScreen.storyboard */; };
 		7794B9681C2DEA6100531B50 /* RosAvtoDengiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9671C2DEA6100531B50 /* RosAvtoDengiTests.m */; };
 		7794B9731C2DEA6100531B50 /* RosAvtoDengiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */; };
-		77B24DFA1C3A9BD600ED9322 /* PostFotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B24DF91C3A9BD600ED9322 /* PostFotoViewController.m */; };
 		77B24DFC1C3AA17000ED9322 /* topBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B24DFB1C3AA17000ED9322 /* topBarImage.png */; };
 		77B24DFE1C3AA1A300ED9322 /* downBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B24DFD1C3AA1A300ED9322 /* downBarImage.png */; };
 		77D0D1E21C2F142C00875F19 /* imageButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E11C2F142C00875F19 /* imageButtonBack.png */; };
@@ -91,8 +90,6 @@
 		7794B96E1C2DEA6100531B50 /* RosAvtoDengiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosAvtoDengiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiUITests.m; sourceTree = "<group>"; };
 		7794B9741C2DEA6100531B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77B24DF81C3A9BD600ED9322 /* PostFotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostFotoViewController.h; sourceTree = "<group>"; };
-		77B24DF91C3A9BD600ED9322 /* PostFotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostFotoViewController.m; sourceTree = "<group>"; };
 		77B24DFB1C3AA17000ED9322 /* topBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = topBarImage.png; path = "../../../РАД/topBarImage.png"; sourceTree = "<group>"; };
 		77B24DFD1C3AA1A300ED9322 /* downBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downBarImage.png; sourceTree = "<group>"; };
 		77D0D1E11C2F142C00875F19 /* imageButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageButtonBack.png; sourceTree = "<group>"; };
@@ -180,8 +177,6 @@
 				77D0D1EC1C2F1D4600875F19 /* CreateFormViewController.m */,
 				773A9B171C300C160014A02E /* FotoViewController.h */,
 				773A9B181C300C160014A02E /* FotoViewController.m */,
-				77B24DF81C3A9BD600ED9322 /* PostFotoViewController.h */,
-				77B24DF91C3A9BD600ED9322 /* PostFotoViewController.m */,
 			);
 			name = Online;
 			sourceTree = "<group>";
@@ -478,7 +473,6 @@
 				7794B9551C2DEA6100531B50 /* ViewController.m in Sources */,
 				77D0D1ED1C2F1D4600875F19 /* CreateFormViewController.m in Sources */,
 				7745287D1C2E0B1E00209FE2 /* FilialsViewController.m in Sources */,
-				77B24DFA1C3A9BD600ED9322 /* PostFotoViewController.m in Sources */,
 				7794B9521C2DEA6100531B50 /* AppDelegate.m in Sources */,
 				7745286B1C2E00D000209FE2 /* ServicesViewController.m in Sources */,
 				7794B94F1C2DEA6100531B50 /* main.m in Sources */,

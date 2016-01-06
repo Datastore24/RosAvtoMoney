@@ -116,20 +116,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="createFotoImage.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V9k-hK-5rm">
-                                <rect key="frame" x="265" y="515" width="45" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="callImage.png"/>
-                            </button>
-                            <view contentMode="scaleToFill" id="L4w-84-ez6">
-                                <rect key="frame" x="20" y="117" width="280" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topBarImage.png" id="d6h-YZ-VzE">
                                 <rect key="frame" x="0.0" y="20" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="L4w-84-ez6">
+                                <rect key="frame" x="20" y="117" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downBarImage.png" id="Epe-TP-9MV">
                                 <rect key="frame" x="0.0" y="485" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -143,46 +138,37 @@
                                 <rect key="frame" x="82" y="304" width="156" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V9k-hK-5rm">
+                                <rect key="frame" x="265" y="515" width="45" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="callImage.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tBo-iH-oQB">
+                                <rect key="frame" x="20" y="412" width="137" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Сделать Фото"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0NW-kV-Ea0">
+                                <rect key="frame" x="163" y="412" width="137" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Отправить"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.87494118129999998" blue="0.1007221455" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="buttonCreateFoto" destination="yM3-WR-lZy" id="826-do-CnB"/>
+                        <outlet property="createFotoButton" destination="tBo-iH-oQB" id="OW3-QW-Tfv"/>
                         <outlet property="frameFotoCapture" destination="L4w-84-ez6" id="zUX-qg-Qka"/>
                         <outlet property="imageView" destination="fPH-CO-wmQ" id="zVt-Dw-GJi"/>
+                        <outlet property="postButton" destination="0NW-kV-Ea0" id="pdt-4b-rMb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="727-Ua-d2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1316" y="624"/>
-        </scene>
-        <!--Post Foto View Controller-->
-        <scene sceneID="wu5-nP-1Lg">
-            <objects>
-                <viewController storyboardIdentifier="PostFotoViewController" id="1Cw-v8-YYv" customClass="PostFotoViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f40-uM-IIY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PTSImage.png" id="tav-NV-IkH">
-                                <rect key="frame" x="60" y="113" width="200" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FbW-XE-lsI">
-                                <rect key="frame" x="60" y="410" width="200" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="PushApplication.png"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="postButton" destination="FbW-XE-lsI" id="R7H-xf-uyy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YN6-5H-cYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1659" y="624"/>
         </scene>
         <!--Create Form View Controller-->
         <scene sceneID="wNx-0w-hdm">
@@ -338,7 +324,7 @@
                                 <rect key="frame" x="20" y="206" width="102" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="center" id="fFq-zL-6qZ">
@@ -419,7 +405,7 @@
   
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
