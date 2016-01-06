@@ -31,6 +31,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Ресайзы
+    
+    CGRect frameView = self.mainView.frame; //Берем размер фрейма верхнего бара
+    frameView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
+    frameView.size.height=self.view.bounds.size.height-15; // Растянуть в размер экрана + 5
+    self.mainView.frame = frameView;//присвоение нового размера
+    
+    self.buttonServices.center = CGPointMake(self.view.center.x, self.view.center.y -90);
+    
+    self.buttonOnline.center = CGPointMake(self.view.center.x, self.view.center.y);
+    
+    self.buttonFilials.center = CGPointMake(self.view.center.x, self.view.center.y+90);
+    
+    self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
+ 
+
+    
+    //
+    
     [self.buttonServices addTarget:self action:@selector(testButtonAcion)
                   forControlEvents:UIControlEventTouchUpInside];
     [self.buttonOnline addTarget:self action:@selector(buttonOnlineAction)
@@ -41,9 +60,14 @@
                  forControlEvents:UIControlEventTouchUpInside];
     
     
+    // Обрати внимание на условия для 4S
+    NSLog(@"%f",self.view.bounds.size.height);
+    if(self.view.bounds.size.height == 480.0f){
+            self.pickerView = [[AKPickerView alloc] initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, 40)];
+    }else{
+            self.pickerView = [[AKPickerView alloc] initWithFrame:CGRectMake(0, 120, self.view.bounds.size.width, 40)];
+    }
     
-    
-    self.pickerView = [[AKPickerView alloc] initWithFrame:CGRectMake(0, 120, 320, 40)];
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
     [self.view addSubview:self.pickerView];
