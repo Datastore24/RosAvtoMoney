@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A85B48EBC384295520CB64AE9A4A1D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		5023B7166A92056085D883175C44BBE2 /* DWBubbleMenuButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F813C5BBC38EC672186AD3EC645F85F9 /* DWBubbleMenuButton-dummy.m */; };
+		55F3DB9475AE5EB76621B6CA8F7F0A06 /* AKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DC577AB409C43724CB29485BAC6874 /* AKPickerView.m */; };
+		5E3455A9D17138FB8DE19A599D5200F5 /* AKPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 239209ED26CDD5A6FC38FBE4BA0DABA3 /* AKPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638756EBDD61F70EBB5CF176BFF2A6FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		69020BA38D2C0DEEC6BAAEAB6CEE6171 /* AKPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C89510D8555120CA96FBFFE86B2A /* AKPickerView-dummy.m */; };
+		A16446A1D2CCEA7055C5135C5984D90D /* DWBubbleMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C88F99922F36A2DA257511E6E9FC510B /* DWBubbleMenuButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A23781B3C04FA8C61424E6FC7F270CD0 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E43B321049E6C821B4FB8DFFC11E805 /* DWBubbleMenuButton.m */; };
+		A76976B560F40CAD69B075F7F714AAA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		F068257C05873FEB56B65FF4DF0B8D4A /* Pods-RosAvtoDengi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697A91133CACB127BD5CBF690E9C18C /* Pods-RosAvtoDengi-dummy.m */; };
+		F39E4F528DEBEDDDF7AA04C615A2F3DE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		164A32D0C97F7023C7088927EBA0E15A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223E333715ADAEC2834CAFC0CF325C45;
+			remoteInfo = DWBubbleMenuButton;
+		};
+		9CAF31B040FAD3C0C1F00FCB7E1A33BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A35273E1314605952F39D68083D1DC9E;
+			remoteInfo = AKPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		239209ED26CDD5A6FC38FBE4BA0DABA3 /* AKPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPickerView.h; path = AKPickerViewSample/AKPickerView/AKPickerView.h; sourceTree = "<group>"; };
+		23DC577AB409C43724CB29485BAC6874 /* AKPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AKPickerView.m; path = AKPickerViewSample/AKPickerView/AKPickerView.m; sourceTree = "<group>"; };
+		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		270F8C540C34F5A7EE261551B6655C3E /* Pods-RosAvtoDengi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RosAvtoDengi.release.xcconfig"; sourceTree = "<group>"; };
+		28DA16CE88C99937EDB07D3FD4B0243F /* Pods-RosAvtoDengi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RosAvtoDengi-frameworks.sh"; sourceTree = "<group>"; };
+		2D2651C75A664EE1E1678667EF21E1B3 /* Pods-RosAvtoDengi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RosAvtoDengi-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E02D2C91382914B1F07D60EB1239DF9 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		346A11A471B2108A3BC748BF5CAD3B09 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		3697A91133CACB127BD5CBF690E9C18C /* Pods-RosAvtoDengi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RosAvtoDengi-dummy.m"; sourceTree = "<group>"; };
+		486185D238539826A277877122B41397 /* Pods-RosAvtoDengi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RosAvtoDengi-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CCE99FCB68F875EC4E124CF655AD69B /* Pods-RosAvtoDengi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RosAvtoDengi.debug.xcconfig"; sourceTree = "<group>"; };
+		54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKPickerView.xcconfig; sourceTree = "<group>"; };
+		7CD56F0F3B8BCCD8E6914A9C2A7DD230 /* libDWBubbleMenuButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDWBubbleMenuButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DWBubbleMenuButton.xcconfig; sourceTree = "<group>"; };
+		8A57D320DBE67D1B2EE93A3BD99BE0E1 /* AKPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKPickerView-prefix.pch"; sourceTree = "<group>"; };
+		90ADE77FE99C75FE88CE2214547E134C /* libAKPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAKPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9831F8F181A9319BC28D3F57CD97215E /* libPods-RosAvtoDengi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RosAvtoDengi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD7C89510D8555120CA96FBFFE86B2A /* AKPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKPickerView-dummy.m"; sourceTree = "<group>"; };
+		9E43B321049E6C821B4FB8DFFC11E805 /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWBubbleMenuButton.m; path = Source/DWBubbleMenuButton.m; sourceTree = "<group>"; };
+		B165DBF6DA28F06B102BE6EC6029942D /* DWBubbleMenuButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DWBubbleMenuButton-prefix.pch"; sourceTree = "<group>"; };
+		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C28D532578B67D57583E6F50DF84FE46 /* Pods-RosAvtoDengi-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RosAvtoDengi-resources.sh"; sourceTree = "<group>"; };
+		C88F99922F36A2DA257511E6E9FC510B /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWBubbleMenuButton.h; path = Source/DWBubbleMenuButton.h; sourceTree = "<group>"; };
+		F813C5BBC38EC672186AD3EC645F85F9 /* DWBubbleMenuButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DWBubbleMenuButton-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02D730166544DD654AC0B85AC653AB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76976B560F40CAD69B075F7F714AAA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61AC91860C19AC7CA1BD04E17BC5152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A85B48EBC384295520CB64AE9A4A1D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A66B0555602BC01DB1965AC34168CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638756EBDD61F70EBB5CF176BFF2A6FB /* Foundation.framework in Frameworks */,
+				F39E4F528DEBEDDDF7AA04C615A2F3DE /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		091672ECC89FFC3BA2B04BADBFA90B77 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F3BBD18D710DC9E3A87BC325A1E2871 /* Pods-RosAvtoDengi */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1736F3F438E0FCCDC9A78A1E5B03ECD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				346A11A471B2108A3BC748BF5CAD3B09 /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D0B44E513E5656E98CA215AA6B75B84 /* DWBubbleMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				C88F99922F36A2DA257511E6E9FC510B /* DWBubbleMenuButton.h */,
+				9E43B321049E6C821B4FB8DFFC11E805 /* DWBubbleMenuButton.m */,
+				2F63809D5B18AA489F42E5D626DF4641 /* Support Files */,
+			);
+			path = DWBubbleMenuButton;
+			sourceTree = "<group>";
+		};
+		1F9136F69F4AAE070075F165BA7A44E9 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				1736F3F438E0FCCDC9A78A1E5B03ECD9 /* Frameworks */,
+				8C008B1EE1A227BC7EF9C530546192B9 /* Resources */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		2F63809D5B18AA489F42E5D626DF4641 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */,
+				F813C5BBC38EC672186AD3EC645F85F9 /* DWBubbleMenuButton-dummy.m */,
+				B165DBF6DA28F06B102BE6EC6029942D /* DWBubbleMenuButton-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DWBubbleMenuButton";
+			sourceTree = "<group>";
+		};
+		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */,
+				B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3F3BBD18D710DC9E3A87BC325A1E2871 /* Pods-RosAvtoDengi */ = {
+			isa = PBXGroup;
+			children = (
+				486185D238539826A277877122B41397 /* Pods-RosAvtoDengi-acknowledgements.markdown */,
+				2D2651C75A664EE1E1678667EF21E1B3 /* Pods-RosAvtoDengi-acknowledgements.plist */,
+				3697A91133CACB127BD5CBF690E9C18C /* Pods-RosAvtoDengi-dummy.m */,
+				28DA16CE88C99937EDB07D3FD4B0243F /* Pods-RosAvtoDengi-frameworks.sh */,
+				C28D532578B67D57583E6F50DF84FE46 /* Pods-RosAvtoDengi-resources.sh */,
+				4CCE99FCB68F875EC4E124CF655AD69B /* Pods-RosAvtoDengi.debug.xcconfig */,
+				270F8C540C34F5A7EE261551B6655C3E /* Pods-RosAvtoDengi.release.xcconfig */,
+			);
+			name = "Pods-RosAvtoDengi";
+			path = "Target Support Files/Pods-RosAvtoDengi";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3926C638AD0708942C88C2BC89261735 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56B0FB7D1C61B76592C8A8B35BB8D86F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */,
+				9BD7C89510D8555120CA96FBFFE86B2A /* AKPickerView-dummy.m */,
+				8A57D320DBE67D1B2EE93A3BD99BE0E1 /* AKPickerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AKPickerView";
+			sourceTree = "<group>";
+		};
+		5DB7A55EE94AEA945E5DA1BF71A34EF7 /* AKPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				239209ED26CDD5A6FC38FBE4BA0DABA3 /* AKPickerView.h */,
+				23DC577AB409C43724CB29485BAC6874 /* AKPickerView.m */,
+				56B0FB7D1C61B76592C8A8B35BB8D86F /* Support Files */,
+			);
+			path = AKPickerView;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E2BF3DC4CCDD3407EB5CB72F2DB71326 /* Pods */,
+				C3B2C72B6DF045F1225A6008F08216F5 /* Products */,
+				091672ECC89FFC3BA2B04BADBFA90B77 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C008B1EE1A227BC7EF9C530546192B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E02D2C91382914B1F07D60EB1239DF9 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C3B2C72B6DF045F1225A6008F08216F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90ADE77FE99C75FE88CE2214547E134C /* libAKPickerView.a */,
+				7CD56F0F3B8BCCD8E6914A9C2A7DD230 /* libDWBubbleMenuButton.a */,
+				9831F8F181A9319BC28D3F57CD97215E /* libPods-RosAvtoDengi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2BF3DC4CCDD3407EB5CB72F2DB71326 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DB7A55EE94AEA945E5DA1BF71A34EF7 /* AKPickerView */,
+				1D0B44E513E5656E98CA215AA6B75B84 /* DWBubbleMenuButton */,
+				1F9136F69F4AAE070075F165BA7A44E9 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C39730E71CE4BC075FAE11F261040BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3455A9D17138FB8DE19A599D5200F5 /* AKPickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA6C18766B80DFD5425270FA818475D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16446A1D2CCEA7055C5135C5984D90D /* DWBubbleMenuButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		027D6F12B3AEEEA476B14D1F7E499290 /* Pods-RosAvtoDengi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF9F3F321A324B224A5DA72179F70EC /* Build configuration list for PBXNativeTarget "Pods-RosAvtoDengi" */;
+			buildPhases = (
+				EB98583B3AB79C220D91C1B55DEB308B /* Sources */,
+				B61AC91860C19AC7CA1BD04E17BC5152 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1363D07904DCE82C702E24C290A5F2FA /* PBXTargetDependency */,
+				3CC40B605135B7CBEA49FCF7995AF377 /* PBXTargetDependency */,
+			);
+			name = "Pods-RosAvtoDengi";
+			productName = "Pods-RosAvtoDengi";
+			productReference = 9831F8F181A9319BC28D3F57CD97215E /* libPods-RosAvtoDengi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		223E333715ADAEC2834CAFC0CF325C45 /* DWBubbleMenuButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C888D903B86CC6CEF057B740E8FA63E2 /* Build configuration list for PBXNativeTarget "DWBubbleMenuButton" */;
+			buildPhases = (
+				C35594294EF5A154B151DD229E0F02DA /* Sources */,
+				02D730166544DD654AC0B85AC653AB37 /* Frameworks */,
+				FBA6C18766B80DFD5425270FA818475D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DWBubbleMenuButton;
+			productName = DWBubbleMenuButton;
+			productReference = 7CD56F0F3B8BCCD8E6914A9C2A7DD230 /* libDWBubbleMenuButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A35273E1314605952F39D68083D1DC9E /* AKPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD15DF2C54D7E6392D6AD7995D804130 /* Build configuration list for PBXNativeTarget "AKPickerView" */;
+			buildPhases = (
+				A1B2EEDD8E7D488F2741F78C323E1747 /* Sources */,
+				E7A66B0555602BC01DB1965AC34168CC /* Frameworks */,
+				4C39730E71CE4BC075FAE11F261040BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKPickerView;
+			productName = AKPickerView;
+			productReference = 90ADE77FE99C75FE88CE2214547E134C /* libAKPickerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C3B2C72B6DF045F1225A6008F08216F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A35273E1314605952F39D68083D1DC9E /* AKPickerView */,
+				223E333715ADAEC2834CAFC0CF325C45 /* DWBubbleMenuButton */,
+				027D6F12B3AEEEA476B14D1F7E499290 /* Pods-RosAvtoDengi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B2EEDD8E7D488F2741F78C323E1747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69020BA38D2C0DEEC6BAAEAB6CEE6171 /* AKPickerView-dummy.m in Sources */,
+				55F3DB9475AE5EB76621B6CA8F7F0A06 /* AKPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35594294EF5A154B151DD229E0F02DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5023B7166A92056085D883175C44BBE2 /* DWBubbleMenuButton-dummy.m in Sources */,
+				A23781B3C04FA8C61424E6FC7F270CD0 /* DWBubbleMenuButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB98583B3AB79C220D91C1B55DEB308B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F068257C05873FEB56B65FF4DF0B8D4A /* Pods-RosAvtoDengi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1363D07904DCE82C702E24C290A5F2FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AKPickerView;
+			target = A35273E1314605952F39D68083D1DC9E /* AKPickerView */;
+			targetProxy = 9CAF31B040FAD3C0C1F00FCB7E1A33BD /* PBXContainerItemProxy */;
+		};
+		3CC40B605135B7CBEA49FCF7995AF377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DWBubbleMenuButton;
+			target = 223E333715ADAEC2834CAFC0CF325C45 /* DWBubbleMenuButton */;
+			targetProxy = 164A32D0C97F7023C7088927EBA0E15A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2494F60D4622079504FE5E4428060C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKPickerView/AKPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30D23FBA39DF85EA948DC887AC95A396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270F8C540C34F5A7EE261551B6655C3E /* Pods-RosAvtoDengi.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		47B3E071388AB8694466F57D875C5531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCE99FCB68F875EC4E124CF655AD69B /* Pods-RosAvtoDengi.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		698CF0C83C17595744329DE349F73E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D590B8D5C4793EA5560F7670696E6F /* AKPickerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AKPickerView/AKPickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		999D8BC2D01805009ADFAC2397C17B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DWBubbleMenuButton/DWBubbleMenuButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1AB94FC7DC8254BB4521AD267722C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EECC58D8D6DE333B802F9FA7449AA78 /* DWBubbleMenuButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DWBubbleMenuButton/DWBubbleMenuButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF9F3F321A324B224A5DA72179F70EC /* Build configuration list for PBXNativeTarget "Pods-RosAvtoDengi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B3E071388AB8694466F57D875C5531 /* Debug */,
+				30D23FBA39DF85EA948DC887AC95A396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C888D903B86CC6CEF057B740E8FA63E2 /* Build configuration list for PBXNativeTarget "DWBubbleMenuButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AB94FC7DC8254BB4521AD267722C1C /* Debug */,
+				999D8BC2D01805009ADFAC2397C17B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD15DF2C54D7E6392D6AD7995D804130 /* Build configuration list for PBXNativeTarget "AKPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2494F60D4622079504FE5E4428060C5A /* Debug */,
+				698CF0C83C17595744329DE349F73E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

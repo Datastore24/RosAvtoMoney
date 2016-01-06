@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		773A9B191C300C160014A02E /* FotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773A9B181C300C160014A02E /* FotoViewController.m */; };
+		773A9B1C1C300FA50014A02E /* createFotoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 773A9B1A1C300FA50014A02E /* createFotoImage.png */; };
+		773A9B1D1C300FA50014A02E /* post.png in Resources */ = {isa = PBXBuildFile; fileRef = 773A9B1B1C300FA50014A02E /* post.png */; };
+		7745286B1C2E00D000209FE2 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7745286A1C2E00D000209FE2 /* ServicesViewController.m */; };
+		7745286F1C2E03DA00209FE2 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7745286E1C2E03DA00209FE2 /* Button1.png */; };
+		774528721C2E04B700209FE2 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 774528701C2E04B700209FE2 /* button3.png */; };
+		774528731C2E04B700209FE2 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 774528711C2E04B700209FE2 /* button4.png */; };
+		774528791C2E077500209FE2 /* OnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774528781C2E077500209FE2 /* OnlineViewController.m */; };
+		7745287D1C2E0B1E00209FE2 /* FilialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7745287C1C2E0B1E00209FE2 /* FilialsViewController.m */; };
+		7745287F1C2E0F6C00209FE2 /* mainImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7745287E1C2E0F6C00209FE2 /* mainImage.png */; };
+		774528811C2E10C900209FE2 /* callImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 774528801C2E10C900209FE2 /* callImage.png */; };
+		7757B1151C39A39100A3DB34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7757B1141C39A39100A3DB34 /* MapKit.framework */; };
+		7794B94F1C2DEA6100531B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B94E1C2DEA6100531B50 /* main.m */; };
+		7794B9521C2DEA6100531B50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9511C2DEA6100531B50 /* AppDelegate.m */; };
+		7794B9551C2DEA6100531B50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9541C2DEA6100531B50 /* ViewController.m */; };
+		7794B9581C2DEA6100531B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7794B9561C2DEA6100531B50 /* Main.storyboard */; };
+		7794B95A1C2DEA6100531B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7794B9591C2DEA6100531B50 /* Assets.xcassets */; };
+		7794B95D1C2DEA6100531B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7794B95B1C2DEA6100531B50 /* LaunchScreen.storyboard */; };
+		7794B9681C2DEA6100531B50 /* RosAvtoDengiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9671C2DEA6100531B50 /* RosAvtoDengiTests.m */; };
+		7794B9731C2DEA6100531B50 /* RosAvtoDengiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */; };
+		77B24DFA1C3A9BD600ED9322 /* PostFotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B24DF91C3A9BD600ED9322 /* PostFotoViewController.m */; };
+		77B24DFC1C3AA17000ED9322 /* topBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B24DFB1C3AA17000ED9322 /* topBarImage.png */; };
+		77B24DFE1C3AA1A300ED9322 /* downBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B24DFD1C3AA1A300ED9322 /* downBarImage.png */; };
+		77D0D1E21C2F142C00875F19 /* imageButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E11C2F142C00875F19 /* imageButtonBack.png */; };
+		77D0D1E61C2F171400875F19 /* button2Online.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E51C2F171400875F19 /* button2Online.png */; };
+		77D0D1E81C2F1C0800875F19 /* CreateForm.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E71C2F1C0800875F19 /* CreateForm.png */; };
+		77D0D1EA1C2F1C0D00875F19 /* PTSImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E91C2F1C0D00875F19 /* PTSImage.png */; };
+		77D0D1ED1C2F1D4600875F19 /* CreateFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D0D1EC1C2F1D4600875F19 /* CreateFormViewController.m */; };
+		77D0D1F11C2F22F300875F19 /* PushApplication.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1F01C2F22F300875F19 /* PushApplication.png */; };
+		E9A8F845C6E36B5398C1C029 /* libPods-RosAvtoDengi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7794B9641C2DEA6100531B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7794B9421C2DEA6100531B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7794B9491C2DEA6100531B50;
+			remoteInfo = RosAvtoDengi;
+		};
+		7794B96F1C2DEA6100531B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7794B9421C2DEA6100531B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7794B9491C2DEA6100531B50;
+			remoteInfo = RosAvtoDengi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03499E9431BB2532645C6091 /* Pods-RosAvtoDengi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.debug.xcconfig"; sourceTree = "<group>"; };
+		5FC9F79E1A735813BB420940 /* Pods-RosAvtoDengi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.release.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.release.xcconfig"; sourceTree = "<group>"; };
+		773A9B171C300C160014A02E /* FotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotoViewController.h; sourceTree = "<group>"; };
+		773A9B181C300C160014A02E /* FotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotoViewController.m; sourceTree = "<group>"; };
+		773A9B1A1C300FA50014A02E /* createFotoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createFotoImage.png; sourceTree = "<group>"; };
+		773A9B1B1C300FA50014A02E /* post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post.png; sourceTree = "<group>"; };
+		774528691C2E00D000209FE2 /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
+		7745286A1C2E00D000209FE2 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
+		7745286E1C2E03DA00209FE2 /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = "<group>"; };
+		774528701C2E04B700209FE2 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
+		774528711C2E04B700209FE2 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
+		774528771C2E077500209FE2 /* OnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineViewController.h; sourceTree = "<group>"; };
+		774528781C2E077500209FE2 /* OnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnlineViewController.m; sourceTree = "<group>"; };
+		7745287B1C2E0B1E00209FE2 /* FilialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilialsViewController.h; sourceTree = "<group>"; };
+		7745287C1C2E0B1E00209FE2 /* FilialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilialsViewController.m; sourceTree = "<group>"; };
+		7745287E1C2E0F6C00209FE2 /* mainImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainImage.png; sourceTree = "<group>"; };
+		774528801C2E10C900209FE2 /* callImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callImage.png; sourceTree = "<group>"; };
+		7757B1141C39A39100A3DB34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7794B94A1C2DEA6100531B50 /* RosAvtoDengi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosAvtoDengi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7794B94E1C2DEA6100531B50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7794B9501C2DEA6100531B50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7794B9511C2DEA6100531B50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7794B9531C2DEA6100531B50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7794B9541C2DEA6100531B50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7794B9571C2DEA6100531B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7794B9591C2DEA6100531B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7794B95C1C2DEA6100531B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7794B95E1C2DEA6100531B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7794B9631C2DEA6100531B50 /* RosAvtoDengiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosAvtoDengiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7794B9671C2DEA6100531B50 /* RosAvtoDengiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiTests.m; sourceTree = "<group>"; };
+		7794B9691C2DEA6100531B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7794B96E1C2DEA6100531B50 /* RosAvtoDengiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosAvtoDengiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiUITests.m; sourceTree = "<group>"; };
+		7794B9741C2DEA6100531B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B24DF81C3A9BD600ED9322 /* PostFotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostFotoViewController.h; sourceTree = "<group>"; };
+		77B24DF91C3A9BD600ED9322 /* PostFotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostFotoViewController.m; sourceTree = "<group>"; };
+		77B24DFB1C3AA17000ED9322 /* topBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = topBarImage.png; path = "../../../РАД/topBarImage.png"; sourceTree = "<group>"; };
+		77B24DFD1C3AA1A300ED9322 /* downBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downBarImage.png; sourceTree = "<group>"; };
+		77D0D1E11C2F142C00875F19 /* imageButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageButtonBack.png; sourceTree = "<group>"; };
+		77D0D1E51C2F171400875F19 /* button2Online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2Online.png; sourceTree = "<group>"; };
+		77D0D1E71C2F1C0800875F19 /* CreateForm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateForm.png; sourceTree = "<group>"; };
+		77D0D1E91C2F1C0D00875F19 /* PTSImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PTSImage.png; sourceTree = "<group>"; };
+		77D0D1EB1C2F1D4600875F19 /* CreateFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateFormViewController.h; sourceTree = "<group>"; };
+		77D0D1EC1C2F1D4600875F19 /* CreateFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateFormViewController.m; sourceTree = "<group>"; };
+		77D0D1F01C2F22F300875F19 /* PushApplication.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PushApplication.png; sourceTree = "<group>"; };
+		9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RosAvtoDengi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7794B9471C2DEA6100531B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7757B1151C39A39100A3DB34 /* MapKit.framework in Frameworks */,
+				E9A8F845C6E36B5398C1C029 /* libPods-RosAvtoDengi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7794B9601C2DEA6100531B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7794B96B1C2DEA6100531B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		414366EAF809C48A2D6005D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03499E9431BB2532645C6091 /* Pods-RosAvtoDengi.debug.xcconfig */,
+				5FC9F79E1A735813BB420940 /* Pods-RosAvtoDengi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		774528741C2E074000209FE2 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				77B24DFD1C3AA1A300ED9322 /* downBarImage.png */,
+				77B24DFB1C3AA17000ED9322 /* topBarImage.png */,
+				77D0D1F01C2F22F300875F19 /* PushApplication.png */,
+				77D0D1E91C2F1C0D00875F19 /* PTSImage.png */,
+				77D0D1E71C2F1C0800875F19 /* CreateForm.png */,
+				77D0D1E51C2F171400875F19 /* button2Online.png */,
+				77D0D1E11C2F142C00875F19 /* imageButtonBack.png */,
+				773A9B1A1C300FA50014A02E /* createFotoImage.png */,
+				773A9B1B1C300FA50014A02E /* post.png */,
+				774528801C2E10C900209FE2 /* callImage.png */,
+				7745287E1C2E0F6C00209FE2 /* mainImage.png */,
+				774528701C2E04B700209FE2 /* button3.png */,
+				774528711C2E04B700209FE2 /* button4.png */,
+				7745286E1C2E03DA00209FE2 /* Button1.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		774528751C2E074D00209FE2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				774528691C2E00D000209FE2 /* ServicesViewController.h */,
+				7745286A1C2E00D000209FE2 /* ServicesViewController.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		774528761C2E075B00209FE2 /* Online */ = {
+			isa = PBXGroup;
+			children = (
+				774528771C2E077500209FE2 /* OnlineViewController.h */,
+				774528781C2E077500209FE2 /* OnlineViewController.m */,
+				77D0D1EB1C2F1D4600875F19 /* CreateFormViewController.h */,
+				77D0D1EC1C2F1D4600875F19 /* CreateFormViewController.m */,
+				773A9B171C300C160014A02E /* FotoViewController.h */,
+				773A9B181C300C160014A02E /* FotoViewController.m */,
+				77B24DF81C3A9BD600ED9322 /* PostFotoViewController.h */,
+				77B24DF91C3A9BD600ED9322 /* PostFotoViewController.m */,
+			);
+			name = Online;
+			sourceTree = "<group>";
+		};
+		7745287A1C2E0B0700209FE2 /* Filials */ = {
+			isa = PBXGroup;
+			children = (
+				7745287B1C2E0B1E00209FE2 /* FilialsViewController.h */,
+				7745287C1C2E0B1E00209FE2 /* FilialsViewController.m */,
+			);
+			name = Filials;
+			sourceTree = "<group>";
+		};
+		7794B9411C2DEA6100531B50 = {
+			isa = PBXGroup;
+			children = (
+				7794B94C1C2DEA6100531B50 /* RosAvtoDengi */,
+				7794B9661C2DEA6100531B50 /* RosAvtoDengiTests */,
+				7794B9711C2DEA6100531B50 /* RosAvtoDengiUITests */,
+				7794B94B1C2DEA6100531B50 /* Products */,
+				414366EAF809C48A2D6005D5 /* Pods */,
+				9508E5337AB16793D77FE24D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7794B94B1C2DEA6100531B50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7794B94A1C2DEA6100531B50 /* RosAvtoDengi.app */,
+				7794B9631C2DEA6100531B50 /* RosAvtoDengiTests.xctest */,
+				7794B96E1C2DEA6100531B50 /* RosAvtoDengiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7794B94C1C2DEA6100531B50 /* RosAvtoDengi */ = {
+			isa = PBXGroup;
+			children = (
+				7745287A1C2E0B0700209FE2 /* Filials */,
+				774528761C2E075B00209FE2 /* Online */,
+				774528751C2E074D00209FE2 /* Services */,
+				774528741C2E074000209FE2 /* Image */,
+				7794B9501C2DEA6100531B50 /* AppDelegate.h */,
+				7794B9511C2DEA6100531B50 /* AppDelegate.m */,
+				7794B9531C2DEA6100531B50 /* ViewController.h */,
+				7794B9541C2DEA6100531B50 /* ViewController.m */,
+				7794B9561C2DEA6100531B50 /* Main.storyboard */,
+				7794B9591C2DEA6100531B50 /* Assets.xcassets */,
+				7794B95B1C2DEA6100531B50 /* LaunchScreen.storyboard */,
+				7794B95E1C2DEA6100531B50 /* Info.plist */,
+				7794B94D1C2DEA6100531B50 /* Supporting Files */,
+			);
+			path = RosAvtoDengi;
+			sourceTree = "<group>";
+		};
+		7794B94D1C2DEA6100531B50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7794B94E1C2DEA6100531B50 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7794B9661C2DEA6100531B50 /* RosAvtoDengiTests */ = {
+			isa = PBXGroup;
+			children = (
+				7794B9671C2DEA6100531B50 /* RosAvtoDengiTests.m */,
+				7794B9691C2DEA6100531B50 /* Info.plist */,
+			);
+			path = RosAvtoDengiTests;
+			sourceTree = "<group>";
+		};
+		7794B9711C2DEA6100531B50 /* RosAvtoDengiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */,
+				7794B9741C2DEA6100531B50 /* Info.plist */,
+			);
+			path = RosAvtoDengiUITests;
+			sourceTree = "<group>";
+		};
+		9508E5337AB16793D77FE24D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7757B1141C39A39100A3DB34 /* MapKit.framework */,
+				9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7794B9491C2DEA6100531B50 /* RosAvtoDengi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7794B9771C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengi" */;
+			buildPhases = (
+				311F8F08922EB64E9C5BADAE /* Check Pods Manifest.lock */,
+				7794B9461C2DEA6100531B50 /* Sources */,
+				7794B9471C2DEA6100531B50 /* Frameworks */,
+				7794B9481C2DEA6100531B50 /* Resources */,
+				D2B3B50D97270A248ECC1445 /* Embed Pods Frameworks */,
+				7EF44E48DE2F12E0653E2E96 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RosAvtoDengi;
+			productName = RosAvtoDengi;
+			productReference = 7794B94A1C2DEA6100531B50 /* RosAvtoDengi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7794B9621C2DEA6100531B50 /* RosAvtoDengiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7794B97A1C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengiTests" */;
+			buildPhases = (
+				7794B95F1C2DEA6100531B50 /* Sources */,
+				7794B9601C2DEA6100531B50 /* Frameworks */,
+				7794B9611C2DEA6100531B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7794B9651C2DEA6100531B50 /* PBXTargetDependency */,
+			);
+			name = RosAvtoDengiTests;
+			productName = RosAvtoDengiTests;
+			productReference = 7794B9631C2DEA6100531B50 /* RosAvtoDengiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7794B96D1C2DEA6100531B50 /* RosAvtoDengiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7794B97D1C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengiUITests" */;
+			buildPhases = (
+				7794B96A1C2DEA6100531B50 /* Sources */,
+				7794B96B1C2DEA6100531B50 /* Frameworks */,
+				7794B96C1C2DEA6100531B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7794B9701C2DEA6100531B50 /* PBXTargetDependency */,
+			);
+			name = RosAvtoDengiUITests;
+			productName = RosAvtoDengiUITests;
+			productReference = 7794B96E1C2DEA6100531B50 /* RosAvtoDengiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7794B9421C2DEA6100531B50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Viktor;
+				TargetAttributes = {
+					7794B9491C2DEA6100531B50 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 967EKT4XP5;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					7794B9621C2DEA6100531B50 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8W954C8DEM;
+						TestTargetID = 7794B9491C2DEA6100531B50;
+					};
+					7794B96D1C2DEA6100531B50 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8W954C8DEM;
+						TestTargetID = 7794B9491C2DEA6100531B50;
+					};
+				};
+			};
+			buildConfigurationList = 7794B9451C2DEA6100531B50 /* Build configuration list for PBXProject "RosAvtoDengi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7794B9411C2DEA6100531B50;
+			productRefGroup = 7794B94B1C2DEA6100531B50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7794B9491C2DEA6100531B50 /* RosAvtoDengi */,
+				7794B9621C2DEA6100531B50 /* RosAvtoDengiTests */,
+				7794B96D1C2DEA6100531B50 /* RosAvtoDengiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7794B9481C2DEA6100531B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7794B95D1C2DEA6100531B50 /* LaunchScreen.storyboard in Resources */,
+				77B24DFE1C3AA1A300ED9322 /* downBarImage.png in Resources */,
+				77D0D1E61C2F171400875F19 /* button2Online.png in Resources */,
+				77D0D1F11C2F22F300875F19 /* PushApplication.png in Resources */,
+				7794B95A1C2DEA6100531B50 /* Assets.xcassets in Resources */,
+				7745287F1C2E0F6C00209FE2 /* mainImage.png in Resources */,
+				7794B9581C2DEA6100531B50 /* Main.storyboard in Resources */,
+				7745286F1C2E03DA00209FE2 /* Button1.png in Resources */,
+				774528731C2E04B700209FE2 /* button4.png in Resources */,
+				77D0D1E21C2F142C00875F19 /* imageButtonBack.png in Resources */,
+				774528721C2E04B700209FE2 /* button3.png in Resources */,
+				77D0D1EA1C2F1C0D00875F19 /* PTSImage.png in Resources */,
+				773A9B1D1C300FA50014A02E /* post.png in Resources */,
+				77D0D1E81C2F1C0800875F19 /* CreateForm.png in Resources */,
+				77B24DFC1C3AA17000ED9322 /* topBarImage.png in Resources */,
+				774528811C2E10C900209FE2 /* callImage.png in Resources */,
+				773A9B1C1C300FA50014A02E /* createFotoImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7794B9611C2DEA6100531B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7794B96C1C2DEA6100531B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		311F8F08922EB64E9C5BADAE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF44E48DE2F12E0653E2E96 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B3B50D97270A248ECC1445 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7794B9461C2DEA6100531B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7794B9551C2DEA6100531B50 /* ViewController.m in Sources */,
+				77D0D1ED1C2F1D4600875F19 /* CreateFormViewController.m in Sources */,
+				7745287D1C2E0B1E00209FE2 /* FilialsViewController.m in Sources */,
+				77B24DFA1C3A9BD600ED9322 /* PostFotoViewController.m in Sources */,
+				7794B9521C2DEA6100531B50 /* AppDelegate.m in Sources */,
+				7745286B1C2E00D000209FE2 /* ServicesViewController.m in Sources */,
+				7794B94F1C2DEA6100531B50 /* main.m in Sources */,
+				773A9B191C300C160014A02E /* FotoViewController.m in Sources */,
+				774528791C2E077500209FE2 /* OnlineViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7794B95F1C2DEA6100531B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7794B9681C2DEA6100531B50 /* RosAvtoDengiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7794B96A1C2DEA6100531B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7794B9731C2DEA6100531B50 /* RosAvtoDengiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7794B9651C2DEA6100531B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7794B9491C2DEA6100531B50 /* RosAvtoDengi */;
+			targetProxy = 7794B9641C2DEA6100531B50 /* PBXContainerItemProxy */;
+		};
+		7794B9701C2DEA6100531B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7794B9491C2DEA6100531B50 /* RosAvtoDengi */;
+			targetProxy = 7794B96F1C2DEA6100531B50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7794B9561C2DEA6100531B50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7794B9571C2DEA6100531B50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7794B95B1C2DEA6100531B50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7794B95C1C2DEA6100531B50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7794B9751C2DEA6100531B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7794B9761C2DEA6100531B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7794B9781C2DEA6100531B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03499E9431BB2532645C6091 /* Pods-RosAvtoDengi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viktor.RosAvtoDengi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		7794B9791C2DEA6100531B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FC9F79E1A735813BB420940 /* Pods-RosAvtoDengi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viktor.RosAvtoDengi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		7794B97B1C2DEA6100531B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RosAvtoDengiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RosAvtoDengi.app/RosAvtoDengi";
+			};
+			name = Debug;
+		};
+		7794B97C1C2DEA6100531B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RosAvtoDengiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RosAvtoDengi.app/RosAvtoDengi";
+			};
+			name = Release;
+		};
+		7794B97E1C2DEA6100531B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RosAvtoDengiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RosAvtoDengi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7794B97F1C2DEA6100531B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RosAvtoDengiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ugi-Ugi.RosAvtoDengiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RosAvtoDengi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7794B9451C2DEA6100531B50 /* Build configuration list for PBXProject "RosAvtoDengi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7794B9751C2DEA6100531B50 /* Debug */,
+				7794B9761C2DEA6100531B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7794B9771C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7794B9781C2DEA6100531B50 /* Debug */,
+				7794B9791C2DEA6100531B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7794B97A1C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7794B97B1C2DEA6100531B50 /* Debug */,
+				7794B97C1C2DEA6100531B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7794B97D1C2DEA6100531B50 /* Build configuration list for PBXNativeTarget "RosAvtoDengiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7794B97E1C2DEA6100531B50 /* Debug */,
+				7794B97F1C2DEA6100531B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7794B9421C2DEA6100531B50 /* Project object */;
+}

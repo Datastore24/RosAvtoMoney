@@ -1,0 +1,16 @@
+PODS:
+  - AKPickerView (0.2.7)
+  - DWBubbleMenuButton (1.0.1)
+  - GoogleMaps (1.11.1)
+
+DEPENDENCIES:
+  - AKPickerView
+  - DWBubbleMenuButton (~> 1.0.1)
+  - GoogleMaps
+
+SPEC CHECKSUMS:
+  AKPickerView: 125372e36fcc372216127600a541f14dcdbb7993
+  DWBubbleMenuButton: 4d9bdbb9d662bdf65c93ceb7fc65901871143d1e
+  GoogleMaps: c947160008f414c66707a5ea60f35e92055c7670
+
+COCOAPODS: 0.39.0

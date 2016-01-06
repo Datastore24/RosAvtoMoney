@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'RosAvtoDengi' do
+
+pod 'DWBubbleMenuButton', '~> 1.0.1'
+pod "AKPickerView"
+pod 'GoogleMaps'
+
+end
+
+target 'RosAvtoDengiTests' do
+
+end
+
+target 'RosAvtoDengiUITests' do
+
+end
+
