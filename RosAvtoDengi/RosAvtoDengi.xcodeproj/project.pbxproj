@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771000321C3E947600F5C80C /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 771000311C3E947600F5C80C /* UIColor+HexColor.m */; };
 		773A9B191C300C160014A02E /* FotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773A9B181C300C160014A02E /* FotoViewController.m */; };
 		773A9B1C1C300FA50014A02E /* createFotoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 773A9B1A1C300FA50014A02E /* createFotoImage.png */; };
 		773A9B1D1C300FA50014A02E /* post.png in Resources */ = {isa = PBXBuildFile; fileRef = 773A9B1B1C300FA50014A02E /* post.png */; };
@@ -59,6 +60,8 @@
 /* Begin PBXFileReference section */
 		03499E9431BB2532645C6091 /* Pods-RosAvtoDengi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.debug.xcconfig"; sourceTree = "<group>"; };
 		5FC9F79E1A735813BB420940 /* Pods-RosAvtoDengi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosAvtoDengi.release.xcconfig"; path = "Pods/Target Support Files/Pods-RosAvtoDengi/Pods-RosAvtoDengi.release.xcconfig"; sourceTree = "<group>"; };
+		771000301C3E947600F5C80C /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		771000311C3E947600F5C80C /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		773A9B171C300C160014A02E /* FotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotoViewController.h; sourceTree = "<group>"; };
 		773A9B181C300C160014A02E /* FotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotoViewController.m; sourceTree = "<group>"; };
 		773A9B1A1C300FA50014A02E /* createFotoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createFotoImage.png; sourceTree = "<group>"; };
@@ -141,6 +144,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7710002F1C3E945D00F5C80C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				771000301C3E947600F5C80C /* UIColor+HexColor.h */,
+				771000311C3E947600F5C80C /* UIColor+HexColor.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		774528741C2E074000209FE2 /* Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +230,7 @@
 		7794B94C1C2DEA6100531B50 /* RosAvtoDengi */ = {
 			isa = PBXGroup;
 			children = (
+				7710002F1C3E945D00F5C80C /* Category */,
 				ADD6A3081C3D7CD900C4FFC5 /* API */,
 				7745287A1C2E0B0700209FE2 /* Filials */,
 				774528761C2E075B00209FE2 /* Online */,
@@ -490,6 +503,7 @@
 				7745286B1C2E00D000209FE2 /* ServicesViewController.m in Sources */,
 				7794B94F1C2DEA6100531B50 /* main.m in Sources */,
 				ADD6A30B1C3D7D9000C4FFC5 /* APIClass.m in Sources */,
+				771000321C3E947600F5C80C /* UIColor+HexColor.m in Sources */,
 				773A9B191C300C160014A02E /* FotoViewController.m in Sources */,
 				774528791C2E077500209FE2 /* OnlineViewController.m in Sources */,
 			);

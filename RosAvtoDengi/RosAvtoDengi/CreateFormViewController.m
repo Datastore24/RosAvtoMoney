@@ -20,7 +20,6 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 @interface CreateFormViewController () <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonBack;
-@property (weak, nonatomic) IBOutlet UIImageView *mainView;
 @property (weak, nonatomic) IBOutlet UIButton *buttonPushAplication;
 
 @property (weak, nonatomic) IBOutlet UITextField *textField1;
@@ -56,53 +55,53 @@ CGFloat animatedDistance;
     
     //Создаем Label
     
-    UILabel * labelFIO = [[UILabel alloc] initWithFrame:CGRectMake(10, 175, 40, 20)];
+    UILabel * labelFIO = [[UILabel alloc] initWithFrame:CGRectMake(10, 195, 40, 20)];
     labelFIO.text = @"Ф.И.О.";
     labelFIO.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelFIO];
+    [self.view addSubview:labelFIO];
     self.textField1.frame = CGRectMake(60, 195, 240, 20);
     
-    UILabel * labelDateBithday = [[UILabel alloc] initWithFrame:CGRectMake(10, 200, 90, 20)];
+    UILabel * labelDateBithday = [[UILabel alloc] initWithFrame:CGRectMake(10, 220, 90, 20)];
     labelDateBithday.text = @"Дата рождения";
     labelDateBithday.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelDateBithday];
+    [self.view addSubview:labelDateBithday];
     self.textField2.frame = CGRectMake(110, 220, 190, 20);
     
-    UILabel * labelYouRegion = [[UILabel alloc] initWithFrame:CGRectMake(10, 225, 70, 20)];
+    UILabel * labelYouRegion = [[UILabel alloc] initWithFrame:CGRectMake(10, 245, 70, 20)];
     labelYouRegion.text = @"Ваш регион";
     labelYouRegion.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelYouRegion];
+    [self.view addSubview:labelYouRegion];
     self.mainPickerView.frame = CGRectMake(130, 233, 130, 45);
     [self.mainPickerView selectRow:self.testArray.count - 1 inComponent:0 animated:YES];
     
-    UILabel * labelModelTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 240, 70, 40)];
+    UILabel * labelModelTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 260, 70, 40)];
     labelModelTS.text = @"Модель ТС";
     labelModelTS.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelModelTS];
+    [self.view addSubview:labelModelTS];
     self.textField4.frame = CGRectMake(90, 270, 210, 20);
     
-    UILabel * labelMarkaTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 275, 70, 20)];
+    UILabel * labelMarkaTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 295, 70, 20)];
     labelMarkaTS.text = @"Марка ТС";
     labelMarkaTS.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelMarkaTS];
+    [self.view addSubview:labelMarkaTS];
     self.textField5.frame = CGRectMake(90, 295, 210, 20);
     
-    UILabel * labelYearCreate = [[UILabel alloc] initWithFrame:CGRectMake(10, 300, 90, 20)];
+    UILabel * labelYearCreate = [[UILabel alloc] initWithFrame:CGRectMake(10, 320, 90, 20)];
     labelYearCreate.text = @"Год выпуска ТС";
     labelYearCreate.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelYearCreate];
+    [self.view addSubview:labelYearCreate];
     self.textField6.frame = CGRectMake(110, 320, 190, 20);
     
-    UILabel * labelNumberTel = [[UILabel alloc] initWithFrame:CGRectMake(10, 325, 70, 20)];
+    UILabel * labelNumberTel = [[UILabel alloc] initWithFrame:CGRectMake(10, 345, 70, 20)];
     labelNumberTel.text = @"Номер тел.";
     labelNumberTel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelNumberTel];
+    [self.view addSubview:labelNumberTel];
     self.textField7.frame = CGRectMake(90, 345, 210, 20);
     
-    UILabel * labelSum = [[UILabel alloc] initWithFrame:CGRectMake(10, 350, 90, 20)];
+    UILabel * labelSum = [[UILabel alloc] initWithFrame:CGRectMake(10, 370, 90, 20)];
     labelSum.text = @"Сумма займа";
     labelSum.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.mainView addSubview:labelSum];
+    [self.view addSubview:labelSum];
     self.textField8.frame = CGRectMake(110, 370, 190, 20);
 
     
