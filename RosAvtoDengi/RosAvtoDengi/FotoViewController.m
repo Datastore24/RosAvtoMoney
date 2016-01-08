@@ -13,12 +13,15 @@
 #import <AFHTTPRequestOperationManager.h>
 
 @interface FotoViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *buttonCreateFoto;
-@property (weak, nonatomic) IBOutlet UIView *frameFotoCapture;
+@property (weak, nonatomic) IBOutlet UIButton *buttonCreateFoto; //Кнопка содать фото
+@property (weak, nonatomic) IBOutlet UIView *frameFotoCapture; //Вью камеры
 @property (strong, nonatomic) UIImage * fotoImage;
-
+@property (weak, nonatomic) IBOutlet UIImageView *imageView; //Картинка снятого фото
 @property (weak, nonatomic) IBOutlet UIButton *createFotoButton; //Кнопка переснять
 @property (weak, nonatomic) IBOutlet UIButton *postButton; //Кнопка отправить
+@property (weak, nonatomic) IBOutlet UIButton *callButton; //Кнопка звонить
+@property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
+@property (weak, nonatomic) IBOutlet UIImageView *downBarButton; //Нижний бар
 
 
 

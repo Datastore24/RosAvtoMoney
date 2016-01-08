@@ -11,10 +11,13 @@
 #import "FotoViewController.h"
 
 @interface OnlineViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *backButton;
-@property (weak, nonatomic) IBOutlet UIButton *callButton;
-@property (weak, nonatomic) IBOutlet UIButton *createFormButton;
-@property (weak, nonatomic) IBOutlet UIButton *buttonPTS;
+@property (weak, nonatomic) IBOutlet UIButton *backButton; //Кнопка назад
+@property (weak, nonatomic) IBOutlet UIButton *callButton; //Кнопка звонить
+@property (weak, nonatomic) IBOutlet UIButton *createFormButton; //Кнопка выслать форму
+@property (weak, nonatomic) IBOutlet UIButton *buttonPTS; //Кнопка снять ПТС
+@property (weak, nonatomic) IBOutlet UIImageView *imageTitle; //Картинка загаловка
+@property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
+@property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
 
 @end
 

@@ -10,9 +10,13 @@
 #import "OnlineViewController.h"
 
 @interface ServicesViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *backButton;
-@property (weak, nonatomic) IBOutlet UIButton *callButton;
-@property (weak, nonatomic) IBOutlet UIButton *buttonOnlineView;
+@property (weak, nonatomic) IBOutlet UIButton *backButton; //Кнопка назад
+@property (weak, nonatomic) IBOutlet UIButton *callButton; //Кнопка звонок
+@property (weak, nonatomic) IBOutlet UIButton *buttonOnlineView; //Кнопка онлайн заявка
+@property (weak, nonatomic) IBOutlet UIImageView *imageTitle; //Картинка заголовка
+@property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
+@property (weak, nonatomic) IBOutlet UILabel *labelText; //Тест на основном вью
+@property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
 
 @end
 

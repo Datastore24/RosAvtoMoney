@@ -9,13 +9,18 @@
 #import "FilialsViewController.h"
 
 @interface FilialsViewController () <UIPickerViewDataSource, UIPickerViewDelegate, GMSMapViewDelegate>
-@property (weak, nonatomic) IBOutlet UIButton *backButton;
-@property (weak, nonatomic) IBOutlet UIButton *callButton;
-@property (weak, nonatomic) IBOutlet UIPickerView *mainPickerView;
+@property (weak, nonatomic) IBOutlet UIButton *backButton; //Кнопка назад
+@property (weak, nonatomic) IBOutlet UIButton *callButton; //Кнопка звонок
+@property (weak, nonatomic) IBOutlet UIPickerView *mainPickerView; //Пикер вью
 @property (strong, nonatomic) NSArray *testArray;
-@property (strong, nonatomic) GMSMapView * mainMap;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIView *mainView;
+@property (strong, nonatomic) GMSMapView * mainMap; //Карта
+@property (weak, nonatomic) IBOutlet UIView *mainView; //Вью на котором нанесенна карта
+@property (weak, nonatomic) IBOutlet UILabel *labelTextRegion; //Текст Регион
+@property (weak, nonatomic) IBOutlet UIImageView *imageTitle; //Картинка заголовка
+@property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
+@property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
+
+
 
 @end
 

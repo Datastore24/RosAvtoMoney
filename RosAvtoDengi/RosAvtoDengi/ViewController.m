@@ -15,11 +15,13 @@
 #import "UIColor+HexColor.h"
 
 @interface ViewController () <AKPickerViewDataSource, AKPickerViewDelegate>
-@property (weak, nonatomic) IBOutlet UIButton * buttonServices;
-@property (weak, nonatomic) IBOutlet UIButton *buttonOnline;
-@property (weak, nonatomic) IBOutlet UIButton *buttonFilials;
-@property (weak, nonatomic) IBOutlet UIButton *callButton;
+@property (weak, nonatomic) IBOutlet UIButton * buttonServices; //Кнопка об услуге
+@property (weak, nonatomic) IBOutlet UIButton *buttonOnline; //Кнопка онлайн заявка
+@property (weak, nonatomic) IBOutlet UIButton *buttonFilials; //Кнопка филиалы
+@property (weak, nonatomic) IBOutlet UIButton *callButton; //Кнопка звонок
 @property (weak, nonatomic) IBOutlet UIImageView *mainView;
+@property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
+@property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
 
 
 @property (nonatomic, strong) AKPickerView *pickerView;

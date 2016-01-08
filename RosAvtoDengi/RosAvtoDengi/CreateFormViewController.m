@@ -19,9 +19,14 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 
 @interface CreateFormViewController () <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *buttonBack;
-@property (weak, nonatomic) IBOutlet UIButton *buttonPushAplication;
+@property (weak, nonatomic) IBOutlet UIButton *buttonBack; //Кнопка назад
+@property (weak, nonatomic) IBOutlet UIButton *buttonPushAplication; //Кнопка отсправить завку
+@property (weak, nonatomic) IBOutlet UIImageView *imageTitle; //Картинка заголовка
+@property (weak, nonatomic) IBOutlet UIButton *callButton; //Кнопка звонить
+@property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
+@property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
 
+//Текст филды идут по очереди-----
 @property (weak, nonatomic) IBOutlet UITextField *textField1;
 @property (weak, nonatomic) IBOutlet UITextField *textField2;
 @property (weak, nonatomic) IBOutlet UITextField *textField4;
@@ -30,7 +35,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 @property (weak, nonatomic) IBOutlet UITextField *textField7;
 @property (weak, nonatomic) IBOutlet UITextField *textField8;
 
-@property (strong, nonatomic) IBOutlet UIPickerView *mainPickerView;
+@property (strong, nonatomic) IBOutlet UIPickerView *mainPickerView; //Пикер вью
 @property (strong, nonatomic) NSString * stringTown;
 
 @property (nonatomic, strong) NSArray * testArray;
