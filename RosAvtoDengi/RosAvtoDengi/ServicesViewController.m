@@ -50,8 +50,13 @@
     self.downBarView.frame =CGRectMake(0, self.view.bounds.size.height-83, self.view.bounds.size.width, 83);
     
     
-    
-    self.buttonOnlineView.center = CGPointMake(self.view.center.x, 430);
+    if(self.view.bounds.size.height == 480.0f){
+        
+        self.buttonOnlineView.center = CGPointMake(self.view.center.x, 250);
+        [self.mainScrollView addSubview:self.buttonOnlineView];
+    }else{
+        self.buttonOnlineView.center = CGPointMake(self.view.center.x, 430);
+    }
     
     self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
     

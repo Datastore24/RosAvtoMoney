@@ -76,7 +76,13 @@
               forControlEvents:UIControlEventTouchUpInside];
     self.buttonCreateFoto.backgroundColor = [UIColor yellowColor];
     
-    self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 280);
+    if(self.view.bounds.size.height == 480.0f){
+            self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 150); //ТУТ ИСПРАВИТЬ ЗНАЧЕНИЕ ПОСЛЕДНЕЕ
+    }else{
+            self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 280);
+    }
+    
+    
     self.imageView.alpha = 0.f;
     self.frameFotoCapture.alpha = 1.f;
 

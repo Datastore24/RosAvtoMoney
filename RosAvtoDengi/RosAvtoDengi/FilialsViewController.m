@@ -37,10 +37,19 @@
     frameWhiteBarView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
     self.whiteBarView.frame = frameWhiteBarView;//присвоение нового размера
     
-    CGRect frameMainView = self.mainView.frame; //Берем размер фрейма верхнего бара
-    frameMainView.size.width=self.view.bounds.size.width-40; // Растянуть в размер экрана
-    frameMainView.size.height=self.view.bounds.size.width-90; // Растянуть в размер экрана
-    self.mainView.frame = frameMainView;//присвоение нового размера
+    
+    if(self.view.bounds.size.height == 480.0f){
+        CGRect frameMainView = self.mainView.frame; //Берем размер фрейма верхнего бара
+        frameMainView.size.width=self.view.bounds.size.width-40; // Растянуть в размер экрана
+        frameMainView.size.height=self.view.bounds.size.width-180; // Растянуть в размер экрана
+        self.mainView.frame = frameMainView;//присвоение нового размера
+    }else{
+        CGRect frameMainView = self.mainView.frame; //Берем размер фрейма верхнего бара
+        frameMainView.size.width=self.view.bounds.size.width-40; // Растянуть в размер экрана
+        frameMainView.size.height=self.view.bounds.size.width-90; // Растянуть в размер экрана
+        self.mainView.frame = frameMainView;//присвоение нового размера
+    }
+   
     
  
     

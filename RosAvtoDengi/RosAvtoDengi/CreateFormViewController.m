@@ -59,6 +59,8 @@ CGFloat animatedDistance;
     frameWhiteBarView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
     self.whiteBarView.frame = frameWhiteBarView;//присвоение нового размера
     
+
+    
     CGRect frameTopBarView = [self.topBarView frame];
     frameTopBarView.size.width = self.view.bounds.size.width;
     
@@ -73,7 +75,17 @@ CGFloat animatedDistance;
     
     
     
-    self.buttonPushAplication.center = CGPointMake(self.view.center.x, 260);
+    
+    if(self.view.bounds.size.height == 480.0f){
+        
+        self.buttonPushAplication.center = CGPointMake(self.view.center.x, 260);
+        self.mainScrollView.frame =CGRectMake(0, 190, self.view.bounds.size.width, self.view.bounds.size.height-270);
+        [self.mainScrollView addSubview:self.buttonPushAplication];
+    }else{
+        self.buttonPushAplication.center = CGPointMake(self.view.center.x, 260);
+        self.mainScrollView.frame =CGRectMake(0, 190, self.view.bounds.size.width, self.view.bounds.size.height-270);
+    }
+    
  
     self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
     
@@ -81,7 +93,7 @@ CGFloat animatedDistance;
     
     //
     
-    self.mainScrollView.contentSize = CGSizeMake(320, 500);
+    self.mainScrollView.contentSize = CGSizeMake(self.view.bounds.size.width, 500);
 
     
     
