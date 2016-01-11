@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelText; //Тест на основном вью
 @property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
 @property (weak, nonatomic) IBOutlet UIView *whiteBarView;
+@property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 
 @end
 
@@ -26,6 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    self.mainScrollView.contentSize = CGSizeMake(320, 400);
     
     //Ресайзы
     

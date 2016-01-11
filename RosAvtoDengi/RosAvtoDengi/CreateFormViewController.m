@@ -34,6 +34,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 @property (weak, nonatomic) IBOutlet UITextField *textField6;
 @property (weak, nonatomic) IBOutlet UITextField *textField7;
 @property (weak, nonatomic) IBOutlet UITextField *textField8;
+@property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 
 @property (strong, nonatomic) IBOutlet UIPickerView *mainPickerView; //Пикер вью
 @property (strong, nonatomic) NSString * stringTown;
@@ -72,13 +73,15 @@ CGFloat animatedDistance;
     
     
     
-    self.buttonPushAplication.center = CGPointMake(self.view.center.x, 430);
+    self.buttonPushAplication.center = CGPointMake(self.view.center.x, 260);
  
     self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
     
     
     
     //
+    
+    self.mainScrollView.contentSize = CGSizeMake(320, 500);
 
     
     
@@ -96,54 +99,54 @@ CGFloat animatedDistance;
     
     //Создаем Label
     
-    UILabel * labelFIO = [[UILabel alloc] initWithFrame:CGRectMake(10, 195, 40, 20)];
+    UILabel * labelFIO = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 40, 20)];
     labelFIO.text = @"Ф.И.О.";
     labelFIO.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelFIO];
-    self.textField1.frame = CGRectMake(60, 195, 240, 20);
+    [self.mainScrollView addSubview:labelFIO];
+    self.textField1.frame = CGRectMake(60, 10, 240, 20);
     
-    UILabel * labelDateBithday = [[UILabel alloc] initWithFrame:CGRectMake(10, 220, 90, 20)];
+    UILabel * labelDateBithday = [[UILabel alloc] initWithFrame:CGRectMake(10, 35, 90, 20)];
     labelDateBithday.text = @"Дата рождения";
     labelDateBithday.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelDateBithday];
-    self.textField2.frame = CGRectMake(110, 220, 190, 20);
+    [self.mainScrollView addSubview:labelDateBithday];
+    self.textField2.frame = CGRectMake(110, 35, 190, 20);
     
-    UILabel * labelYouRegion = [[UILabel alloc] initWithFrame:CGRectMake(10, 245, 70, 20)];
+    UILabel * labelYouRegion = [[UILabel alloc] initWithFrame:CGRectMake(10, 60, 70, 20)];
     labelYouRegion.text = @"Ваш регион";
     labelYouRegion.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelYouRegion];
-    self.mainPickerView.frame = CGRectMake(130, 233, 130, 45);
+    [self.mainScrollView addSubview:labelYouRegion];
+    self.mainPickerView.frame = CGRectMake(130, 48, 130, 45);
     [self.mainPickerView selectRow:self.testArray.count - 1 inComponent:0 animated:YES];
     
-    UILabel * labelModelTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 260, 70, 40)];
+    UILabel * labelModelTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 75, 70, 40)];
     labelModelTS.text = @"Модель ТС";
     labelModelTS.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelModelTS];
-    self.textField4.frame = CGRectMake(90, 270, 210, 20);
+    [self.mainScrollView addSubview:labelModelTS];
+    self.textField4.frame = CGRectMake(90, 85, 210, 20);
     
-    UILabel * labelMarkaTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 295, 70, 20)];
+    UILabel * labelMarkaTS = [[UILabel alloc] initWithFrame:CGRectMake(10, 110, 70, 20)];
     labelMarkaTS.text = @"Марка ТС";
     labelMarkaTS.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelMarkaTS];
-    self.textField5.frame = CGRectMake(90, 295, 210, 20);
+    [self.mainScrollView addSubview:labelMarkaTS];
+    self.textField5.frame = CGRectMake(90, 110, 210, 20);
     
-    UILabel * labelYearCreate = [[UILabel alloc] initWithFrame:CGRectMake(10, 320, 90, 20)];
+    UILabel * labelYearCreate = [[UILabel alloc] initWithFrame:CGRectMake(10, 135, 90, 20)];
     labelYearCreate.text = @"Год выпуска ТС";
     labelYearCreate.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelYearCreate];
-    self.textField6.frame = CGRectMake(110, 320, 190, 20);
+    [self.mainScrollView addSubview:labelYearCreate];
+    self.textField6.frame = CGRectMake(110, 135, 190, 20);
     
-    UILabel * labelNumberTel = [[UILabel alloc] initWithFrame:CGRectMake(10, 345, 70, 20)];
+    UILabel * labelNumberTel = [[UILabel alloc] initWithFrame:CGRectMake(10, 160, 70, 20)];
     labelNumberTel.text = @"Номер тел.";
     labelNumberTel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelNumberTel];
-    self.textField7.frame = CGRectMake(90, 345, 210, 20);
+    [self.mainScrollView addSubview:labelNumberTel];
+    self.textField7.frame = CGRectMake(90, 160, 210, 20);
     
-    UILabel * labelSum = [[UILabel alloc] initWithFrame:CGRectMake(10, 370, 90, 20)];
+    UILabel * labelSum = [[UILabel alloc] initWithFrame:CGRectMake(10, 185, 90, 20)];
     labelSum.text = @"Сумма займа";
     labelSum.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    [self.view addSubview:labelSum];
-    self.textField8.frame = CGRectMake(110, 370, 190, 20);
+    [self.mainScrollView addSubview:labelSum];
+    self.textField8.frame = CGRectMake(110, 185, 190, 20);
 
     
 
