@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageTitle; //Картинка заголовка
 @property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
 @property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
+@property (weak, nonatomic) IBOutlet UIView *whiteBarView;
 
 
 
@@ -28,6 +29,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    //Ресайзы
+    
+    CGRect frameWhiteBarView = self.whiteBarView.frame; //Берем размер фрейма верхнего бара
+    frameWhiteBarView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
+    self.whiteBarView.frame = frameWhiteBarView;//присвоение нового размера
+    
+    CGRect frameMainView = self.mainView.frame; //Берем размер фрейма верхнего бара
+    frameMainView.size.width=self.view.bounds.size.width-40; // Растянуть в размер экрана
+    frameMainView.size.height=self.view.bounds.size.width-90; // Растянуть в размер экрана
+    self.mainView.frame = frameMainView;//присвоение нового размера
+    
+ 
+    
+    CGRect frameTopBarView = [self.topBarView frame];
+    frameTopBarView.size.width = self.view.bounds.size.width;
+    
+    [self.topBarView setFrame:frameTopBarView];
+    
+    CGRect frameDownBarView = [self.downBarView frame];
+    frameDownBarView.size.width = self.view.bounds.size.width;
+    
+    [self.downBarView setFrame:frameDownBarView];
+    
+    self.downBarView.frame =CGRectMake(0, self.view.bounds.size.height-83, self.view.bounds.size.width, 83);
+    
+    
+    
+   // self.buttonCreateFoto.center = CGPointMake(self.view.center.x, self.view.bounds.size.height-120);
+    
+    self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
+    
+    
+    
+    //
     
     self.mainView.layer.cornerRadius = 3.f;
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:45.03409306485644

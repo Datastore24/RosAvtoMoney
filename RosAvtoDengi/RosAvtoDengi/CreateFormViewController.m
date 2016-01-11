@@ -40,13 +40,49 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 
 @property (nonatomic, strong) NSArray * testArray;
 
+@property (weak, nonatomic) IBOutlet UIView *whiteBarView;
+
+
+
 @end
 
 @implementation CreateFormViewController
 CGFloat animatedDistance;
 
 - (void)viewDidLoad {
-    [super viewDidLoad];    
+    [super viewDidLoad];
+    
+    //Ресайзы
+    
+    CGRect frameWhiteBarView = self.whiteBarView.frame; //Берем размер фрейма верхнего бара
+    frameWhiteBarView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
+    self.whiteBarView.frame = frameWhiteBarView;//присвоение нового размера
+    
+    CGRect frameTopBarView = [self.topBarView frame];
+    frameTopBarView.size.width = self.view.bounds.size.width;
+    
+    [self.topBarView setFrame:frameTopBarView];
+    
+    CGRect frameDownBarView = [self.downBarView frame];
+    frameDownBarView.size.width = self.view.bounds.size.width;
+    
+    [self.downBarView setFrame:frameDownBarView];
+    
+    self.downBarView.frame =CGRectMake(0, self.view.bounds.size.height-83, self.view.bounds.size.width, 83);
+    
+    
+    
+    self.buttonPushAplication.center = CGPointMake(self.view.center.x, 430);
+ 
+    self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
+    
+    
+    
+    //
+
+    
+    
+    
     self.testArray = [NSArray arrayWithObjects:
                        @"Ставрополь",
                        @"Сочи",

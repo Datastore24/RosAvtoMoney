@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *mainView;
 @property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
 @property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
+@property (weak, nonatomic) IBOutlet UIView *whiteBarView;
 
 
 @property (nonatomic, strong) AKPickerView *pickerView;
@@ -36,16 +37,34 @@
     
     //Ресайзы
     
+    CGRect frameWhiteBarView = self.whiteBarView.frame; //Берем размер фрейма верхнего бара
+    frameWhiteBarView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
+    self.whiteBarView.frame = frameWhiteBarView;//присвоение нового размера
+    
     CGRect frameView = self.mainView.frame; //Берем размер фрейма верхнего бара
     frameView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
     frameView.size.height=self.view.bounds.size.height-15; // Растянуть в размер экрана + 5
     self.mainView.frame = frameView;//присвоение нового размера
     
-    self.buttonServices.center = CGPointMake(self.view.center.x, self.view.center.y -90);
+    CGRect frameTopBarView = [self.topBarView frame];
+    frameTopBarView.size.width = self.view.bounds.size.width;
+    
+    [self.topBarView setFrame:frameTopBarView];
+    
+    CGRect frameDownBarView = [self.downBarView frame];
+    frameDownBarView.size.width = self.view.bounds.size.width;
+    
+    [self.downBarView setFrame:frameDownBarView];
+    
+    self.downBarView.frame =CGRectMake(0, self.view.bounds.size.height-83, self.view.bounds.size.width, 83);
+    
+    
+    
+    self.buttonServices.center = CGPointMake(self.view.center.x, self.view.center.y -80);
     
     self.buttonOnline.center = CGPointMake(self.view.center.x, self.view.center.y);
     
-    self.buttonFilials.center = CGPointMake(self.view.center.x, self.view.center.y+90);
+    self.buttonFilials.center = CGPointMake(self.view.center.x, self.view.center.y+80);
     
     self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
  
@@ -66,7 +85,7 @@
     // Обрати внимание на условия для 4S
     NSLog(@"%f",self.view.bounds.size.height);
     if(self.view.bounds.size.height == 480.0f){
-            self.pickerView = [[AKPickerView alloc] initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, 40)];
+            self.pickerView = [[AKPickerView alloc] initWithFrame:CGRectMake(0, 93, self.view.bounds.size.width, 40)];
     }else{
             self.pickerView = [[AKPickerView alloc] initWithFrame:CGRectMake(0, 120, self.view.bounds.size.width, 40)];
     }
@@ -95,6 +114,14 @@
     
     
 
+}
+
+-(UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize {
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
 }
 
 - (void)didReceiveMemoryWarning {

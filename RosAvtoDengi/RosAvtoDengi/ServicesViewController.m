@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
 @property (weak, nonatomic) IBOutlet UILabel *labelText; //Тест на основном вью
 @property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
+@property (weak, nonatomic) IBOutlet UIView *whiteBarView;
 
 @end
 
@@ -24,6 +25,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    //Ресайзы
+    
+    CGRect frameWhiteBarView = self.whiteBarView.frame; //Берем размер фрейма верхнего бара
+    frameWhiteBarView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
+    self.whiteBarView.frame = frameWhiteBarView;//присвоение нового размера
+    
+    CGRect frameTopBarView = [self.topBarView frame];
+    frameTopBarView.size.width = self.view.bounds.size.width;
+    
+    [self.topBarView setFrame:frameTopBarView];
+    
+    CGRect frameDownBarView = [self.downBarView frame];
+    frameDownBarView.size.width = self.view.bounds.size.width;
+    
+    [self.downBarView setFrame:frameDownBarView];
+    
+    self.downBarView.frame =CGRectMake(0, self.view.bounds.size.height-83, self.view.bounds.size.width, 83);
+    
+    
+    
+    self.buttonOnlineView.center = CGPointMake(self.view.center.x, 430);
+    
+    self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
+    
+    
+    
+    //
     
     [self.backButton addTarget:self action:@selector(backButtonAction)
               forControlEvents:UIControlEventTouchUpInside];

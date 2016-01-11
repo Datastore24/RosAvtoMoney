@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *callButton; //Кнопка звонить
 @property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
 @property (weak, nonatomic) IBOutlet UIImageView *downBarButton; //Нижний бар
+@property (weak, nonatomic) IBOutlet UIView *whiteBarView;
 
 
 
@@ -36,6 +37,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Ресайзы
+    
+    CGRect frameWhiteBarView = self.whiteBarView.frame; //Берем размер фрейма верхнего бара
+    frameWhiteBarView.size.width=self.view.bounds.size.width; // Растянуть в размер экрана
+    self.whiteBarView.frame = frameWhiteBarView;//присвоение нового размера
+    
+    CGRect frameTopBarView = [self.topBarView frame];
+    frameTopBarView.size.width = self.view.bounds.size.width;
+    
+    [self.topBarView setFrame:frameTopBarView];
+    
+    CGRect frameDownBarView = [self.downBarButton frame];
+    frameDownBarView.size.width = self.view.bounds.size.width;
+    
+    [self.downBarButton setFrame:frameDownBarView];
+    
+    self.downBarButton.frame =CGRectMake(0, self.view.bounds.size.height-83, self.view.bounds.size.width, 83);
+    
+    
+    
+    self.buttonCreateFoto.center = CGPointMake(self.view.center.x, self.view.bounds.size.height-120);
+    
+    self.callButton.frame = CGRectMake(self.view.bounds.size.width-48, self.view.bounds.size.height-49, 45, 46);
+    
+    
+    
+    //
+    
+    
     
     self.createFotoButton.alpha = 0.f;
     [self.createFotoButton addTarget:self action:@selector(createFotoButtonAction)
@@ -46,7 +76,7 @@
               forControlEvents:UIControlEventTouchUpInside];
     self.buttonCreateFoto.backgroundColor = [UIColor yellowColor];
     
-    self.imageView.frame = CGRectMake(20, 117, 280, 280);
+    self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 280);
     self.imageView.alpha = 0.f;
     self.frameFotoCapture.alpha = 1.f;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qcE-kq-RUc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qcE-kq-RUc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -57,11 +57,12 @@
                         <outlet property="callButton" destination="vAH-Mj-kxl" id="yu6-xm-mOq"/>
                         <outlet property="downBarView" destination="de2-dS-pmb" id="4ol-7o-b4C"/>
                         <outlet property="topBarView" destination="htd-42-LQY" id="ee7-LU-G9g"/>
+                        <outlet property="whiteBarView" destination="v2K-Vf-pQn" id="11C-JG-ES5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="321"/>
+            <point key="canvasLocation" x="691" y="582"/>
         </scene>
         <!--Online View Controller-->
         <scene sceneID="Dks-ME-5m9">
@@ -119,6 +120,7 @@
                         <outlet property="downBarView" destination="FXu-hj-33A" id="oYj-hH-TM3"/>
                         <outlet property="imageTitle" destination="2H9-Rt-0rp" id="ea6-Si-rB7"/>
                         <outlet property="topBarView" destination="GFx-D1-qhl" id="wPb-37-hcs"/>
+                        <outlet property="whiteBarView" destination="yat-ls-tdJ" id="yeI-dV-Jgt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ng-HL-Oa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -189,6 +191,7 @@
                         <outlet property="imageView" destination="fPH-CO-wmQ" id="zVt-Dw-GJi"/>
                         <outlet property="postButton" destination="0NW-kV-Ea0" id="pdt-4b-rMb"/>
                         <outlet property="topBarView" destination="d6h-YZ-VzE" id="bCd-J6-iWl"/>
+                        <outlet property="whiteBarView" destination="W4T-TJ-bpn" id="Tb2-Nb-5x8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="727-Ua-d2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -280,11 +283,6 @@
                                     <outlet property="delegate" destination="qfv-td-lU4" id="Qx8-aI-hID"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TIj-5Z-gSU">
-                                <rect key="frame" x="265" y="515" width="45" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="callImage.png"/>
-                            </button>
                             <pickerView contentMode="center" id="0td-oK-uKB">
                                 <rect key="frame" x="130" y="232" width="130" height="43"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -330,6 +328,7 @@
                         <outlet property="textField7" destination="b0J-Q2-6vO" id="LUQ-aH-wcN"/>
                         <outlet property="textField8" destination="thv-h7-vHH" id="Icv-OD-qR2"/>
                         <outlet property="topBarView" destination="xWk-pj-zOa" id="PJH-fp-Vfi"/>
+                        <outlet property="whiteBarView" destination="9rw-So-oLF" id="2KV-Lz-sm1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFc-2v-aGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -404,6 +403,7 @@
                         <outlet property="mainPickerView" destination="fFq-zL-6qZ" id="Z8u-bq-mP3"/>
                         <outlet property="mainView" destination="qof-iT-eKh" id="JOV-po-419"/>
                         <outlet property="topBarView" destination="KOB-r2-jrx" id="dyn-51-v6e"/>
+                        <outlet property="whiteBarView" destination="cL8-KL-GeF" id="VaJ-Ya-ozE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cy8-Bc-uW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -482,6 +482,7 @@
                         <outlet property="imageTitle" destination="K36-cg-PY8" id="Y31-Kg-cwu"/>
                         <outlet property="labelText" destination="ZS2-Ic-MTC" id="ZNa-Vm-sJ2"/>
                         <outlet property="topBarView" destination="F0B-Zj-E1C" id="xl8-B1-KtJ"/>
+                        <outlet property="whiteBarView" destination="t2h-Xo-PWr" id="iVu-gC-qQs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ht2-Q9-vrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
