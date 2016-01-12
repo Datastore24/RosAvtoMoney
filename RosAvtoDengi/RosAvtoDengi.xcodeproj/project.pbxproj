@@ -55,6 +55,12 @@
 		77D0D1F11C2F22F300875F19 /* PushApplication.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1F01C2F22F300875F19 /* PushApplication.png */; };
 		ADD6A3071C3D649000C4FFC5 /* topBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD6A3061C3D649000C4FFC5 /* topBarImage.png */; };
 		ADD6A30B1C3D7D9000C4FFC5 /* APIClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD6A30A1C3D7D9000C4FFC5 /* APIClass.m */; };
+		ADFAEF901C45774600EDA73D /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFAEF8F1C45774600EDA73D /* Images-2.xcassets */; };
+		ADFAEF961C45778700EDA73D /* iphone 4.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAEF921C45778700EDA73D /* iphone 4.png */; };
+		ADFAEF971C45778700EDA73D /* iphone 5.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAEF931C45778700EDA73D /* iphone 5.png */; };
+		ADFAEF981C45778700EDA73D /* iphone 6 Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAEF941C45778700EDA73D /* iphone 6 Plus.png */; };
+		ADFAEF991C45778700EDA73D /* iphone 6.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAEF951C45778700EDA73D /* iphone 6.png */; };
+		ADFAEF9B1C4579A800EDA73D /* iphone 6 Plus_2.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAEF9A1C4579A800EDA73D /* iphone 6 Plus_2.png */; };
 		E9A8F845C6E36B5398C1C029 /* libPods-RosAvtoDengi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674E0090E89A7B09C4C71B6 /* libPods-RosAvtoDengi.a */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +148,12 @@
 		ADD6A3061C3D649000C4FFC5 /* topBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarImage.png; sourceTree = "<group>"; };
 		ADD6A3091C3D7D9000C4FFC5 /* APIClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClass.h; sourceTree = "<group>"; };
 		ADD6A30A1C3D7D9000C4FFC5 /* APIClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClass.m; sourceTree = "<group>"; };
+		ADFAEF8F1C45774600EDA73D /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		ADFAEF921C45778700EDA73D /* iphone 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone 4.png"; sourceTree = "<group>"; };
+		ADFAEF931C45778700EDA73D /* iphone 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone 5.png"; sourceTree = "<group>"; };
+		ADFAEF941C45778700EDA73D /* iphone 6 Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone 6 Plus.png"; sourceTree = "<group>"; };
+		ADFAEF951C45778700EDA73D /* iphone 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone 6.png"; sourceTree = "<group>"; };
+		ADFAEF9A1C4579A800EDA73D /* iphone 6 Plus_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone 6 Plus_2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +229,7 @@
 		774528741C2E074000209FE2 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				ADFAEF911C45777B00EDA73D /* Launch */,
 				77B24DFD1C3AA1A300ED9322 /* downBarImage.png */,
 				ADD6A3061C3D649000C4FFC5 /* topBarImage.png */,
 				77D0D1F01C2F22F300875F19 /* PushApplication.png */,
@@ -306,6 +319,7 @@
 				7794B9591C2DEA6100531B50 /* Assets.xcassets */,
 				7794B95B1C2DEA6100531B50 /* LaunchScreen.storyboard */,
 				7794B95E1C2DEA6100531B50 /* Info.plist */,
+				ADFAEF8F1C45774600EDA73D /* Images-2.xcassets */,
 				7794B94D1C2DEA6100531B50 /* Supporting Files */,
 			);
 			path = RosAvtoDengi;
@@ -353,6 +367,18 @@
 				ADD6A30A1C3D7D9000C4FFC5 /* APIClass.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		ADFAEF911C45777B00EDA73D /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAEF921C45778700EDA73D /* iphone 4.png */,
+				ADFAEF931C45778700EDA73D /* iphone 5.png */,
+				ADFAEF941C45778700EDA73D /* iphone 6 Plus.png */,
+				ADFAEF9A1C4579A800EDA73D /* iphone 6 Plus_2.png */,
+				ADFAEF951C45778700EDA73D /* iphone 6.png */,
+			);
+			name = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFAEF991C45778700EDA73D /* iphone 6.png in Resources */,
 				7794B95D1C2DEA6100531B50 /* LaunchScreen.storyboard in Resources */,
 				771A13341C43EF8400E6C431 /* Icon-Small-50.png in Resources */,
 				77B24DFE1C3AA1A300ED9322 /* downBarImage.png in Resources */,
@@ -486,17 +513,22 @@
 				771A133A1C43EF8400E6C431 /* Icon@2x.png in Resources */,
 				7745286F1C2E03DA00209FE2 /* Button1.png in Resources */,
 				774528731C2E04B700209FE2 /* button4.png in Resources */,
+				ADFAEF971C45778700EDA73D /* iphone 5.png in Resources */,
+				ADFAEF981C45778700EDA73D /* iphone 6 Plus.png in Resources */,
 				771A132E1C43EF8400E6C431 /* Icon-72@2x.png in Resources */,
+				ADFAEF901C45774600EDA73D /* Images-2.xcassets in Resources */,
 				771A13311C43EF8400E6C431 /* Icon-Small-40.png in Resources */,
 				77D0D1E21C2F142C00875F19 /* imageButtonBack.png in Resources */,
 				774528721C2E04B700209FE2 /* button3.png in Resources */,
 				77D0D1EA1C2F1C0D00875F19 /* PTSImage.png in Resources */,
 				773A9B1D1C300FA50014A02E /* post.png in Resources */,
+				ADFAEF9B1C4579A800EDA73D /* iphone 6 Plus_2.png in Resources */,
 				77D0D1E81C2F1C0800875F19 /* CreateForm.png in Resources */,
 				771A132A1C43EF8400E6C431 /* Icon-60.png in Resources */,
 				ADD6A3071C3D649000C4FFC5 /* topBarImage.png in Resources */,
 				771A132C1C43EF8400E6C431 /* Icon-60@3x.png in Resources */,
 				774528811C2E10C900209FE2 /* callImage.png in Resources */,
+				ADFAEF961C45778700EDA73D /* iphone 4.png in Resources */,
 				771A13331C43EF8400E6C431 /* Icon-Small-40@3x.png in Resources */,
 				771A132B1C43EF8400E6C431 /* Icon-60@2x.png in Resources */,
 				771A13321C43EF8400E6C431 /* Icon-Small-40@2x.png in Resources */,
@@ -727,6 +759,7 @@
 			baseConfigurationReference = 03499E9431BB2532645C6091 /* Pods-RosAvtoDengi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
@@ -735,6 +768,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.viktor.RosAvtoDengi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -743,6 +777,7 @@
 			baseConfigurationReference = 5FC9F79E1A735813BB420940 /* Pods-RosAvtoDengi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RosAvtoDengi/Info.plist;
@@ -751,6 +786,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.viktor.RosAvtoDengi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
