@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *topBarView; //Верхний бар
 @property (weak, nonatomic) IBOutlet UIImageView *downBarView; //Нижний бар
 @property (weak, nonatomic) IBOutlet UIView *whiteBarView;
+@property (weak, nonatomic) IBOutlet UIButton *buttonCall;
 
 
 
@@ -29,6 +30,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.buttonCall addTarget:self action:@selector(buttonCallAction)
+              forControlEvents:UIControlEventTouchUpInside];
     
     
     //Ресайзы
@@ -191,6 +195,11 @@ numberOfRowsInComponent:(NSInteger)component
     [[self.mainPickerView.subviews objectAtIndex:2] setHidden:YES];
     
     return label;
+}
+
+- (void) buttonCallAction
+{
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+78007006939"]];
 }
 
 

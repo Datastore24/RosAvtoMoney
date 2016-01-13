@@ -65,6 +65,8 @@
     
     //
     
+    [self.callButton addTarget:self action:@selector(callButtonAction)
+              forControlEvents:UIControlEventTouchUpInside];
     
     
     self.createFotoButton.alpha = 0.f;
@@ -76,11 +78,13 @@
               forControlEvents:UIControlEventTouchUpInside];
     self.buttonCreateFoto.backgroundColor = [UIColor yellowColor];
     
-    if(self.view.bounds.size.height == 480.0f){
-            self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 150); //ТУТ ИСПРАВИТЬ ЗНАЧЕНИЕ ПОСЛЕДНЕЕ
-    }else{
-            self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 280);
-    }
+//    if(self.view.bounds.size.height == 480.0f){
+//            self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 150); //ТУТ ИСПРАВИТЬ ЗНАЧЕНИЕ ПОСЛЕДНЕЕ
+//    }else{
+//            self.imageView.frame = CGRectMake(20, 117, self.view.bounds.size.width, 280);
+//    }
+    
+    self.imageView.frame = CGRectMake(55, 111, 210, 280);
     
     
     self.imageView.alpha = 0.f;
@@ -205,6 +209,11 @@
      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
          NSLog(@"Error: %@ ***** %@", operation.responseString, error);
      }];
+}
+
+- (void) callButtonAction
+{
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+78007006939"]];
 }
 
 @end

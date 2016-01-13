@@ -47,6 +47,8 @@
 		7794B9681C2DEA6100531B50 /* RosAvtoDengiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9671C2DEA6100531B50 /* RosAvtoDengiTests.m */; };
 		7794B9731C2DEA6100531B50 /* RosAvtoDengiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */; };
 		77B24DFE1C3AA1A300ED9322 /* downBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B24DFD1C3AA1A300ED9322 /* downBarImage.png */; };
+		77CDF5781C46268A00BB1C56 /* sendButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CDF5761C46268A00BB1C56 /* sendButton.png */; };
+		77CDF5791C46268A00BB1C56 /* haveFotoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CDF5771C46268A00BB1C56 /* haveFotoButton.png */; };
 		77D0D1E21C2F142C00875F19 /* imageButtonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E11C2F142C00875F19 /* imageButtonBack.png */; };
 		77D0D1E61C2F171400875F19 /* button2Online.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E51C2F171400875F19 /* button2Online.png */; };
 		77D0D1E81C2F1C0800875F19 /* CreateForm.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D0D1E71C2F1C0800875F19 /* CreateForm.png */; };
@@ -137,6 +139,8 @@
 		7794B9721C2DEA6100531B50 /* RosAvtoDengiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RosAvtoDengiUITests.m; sourceTree = "<group>"; };
 		7794B9741C2DEA6100531B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77B24DFD1C3AA1A300ED9322 /* downBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downBarImage.png; sourceTree = "<group>"; };
+		77CDF5761C46268A00BB1C56 /* sendButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendButton.png; sourceTree = "<group>"; };
+		77CDF5771C46268A00BB1C56 /* haveFotoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haveFotoButton.png; sourceTree = "<group>"; };
 		77D0D1E11C2F142C00875F19 /* imageButtonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageButtonBack.png; sourceTree = "<group>"; };
 		77D0D1E51C2F171400875F19 /* button2Online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2Online.png; sourceTree = "<group>"; };
 		77D0D1E71C2F1C0800875F19 /* CreateForm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreateForm.png; sourceTree = "<group>"; };
@@ -372,6 +376,8 @@
 		ADFAEF911C45777B00EDA73D /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				77CDF5761C46268A00BB1C56 /* sendButton.png */,
+				77CDF5771C46268A00BB1C56 /* haveFotoButton.png */,
 				ADFAEF921C45778700EDA73D /* iphone 4.png */,
 				ADFAEF931C45778700EDA73D /* iphone 5.png */,
 				ADFAEF941C45778700EDA73D /* iphone 6 Plus.png */,
@@ -509,6 +515,7 @@
 				771A13361C43EF8400E6C431 /* Icon-Small.png in Resources */,
 				7745287F1C2E0F6C00209FE2 /* mainImage.png in Resources */,
 				771A13351C43EF8400E6C431 /* Icon-Small-50@2x.png in Resources */,
+				77CDF5791C46268A00BB1C56 /* haveFotoButton.png in Resources */,
 				7794B9581C2DEA6100531B50 /* Main.storyboard in Resources */,
 				771A133A1C43EF8400E6C431 /* Icon@2x.png in Resources */,
 				7745286F1C2E03DA00209FE2 /* Button1.png in Resources */,
@@ -516,6 +523,7 @@
 				ADFAEF971C45778700EDA73D /* iphone 5.png in Resources */,
 				ADFAEF981C45778700EDA73D /* iphone 6 Plus.png in Resources */,
 				771A132E1C43EF8400E6C431 /* Icon-72@2x.png in Resources */,
+				77CDF5781C46268A00BB1C56 /* sendButton.png in Resources */,
 				ADFAEF901C45774600EDA73D /* Images-2.xcassets in Resources */,
 				771A13311C43EF8400E6C431 /* Icon-Small-40.png in Resources */,
 				77D0D1E21C2F142C00875F19 /* imageButtonBack.png in Resources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qcE-kq-RUc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qcE-kq-RUc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -144,11 +144,6 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="L4w-84-ez6">
-                                <rect key="frame" x="20" y="117" width="280" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downBarImage.png" id="Epe-TP-9MV">
                                 <rect key="frame" x="0.0" y="485" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -167,18 +162,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="callImage.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tBo-iH-oQB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tBo-iH-oQB">
                                 <rect key="frame" x="20" y="412" width="137" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Сделать Фото"/>
+                                <state key="normal" image="haveFotoButton.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0NW-kV-Ea0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0NW-kV-Ea0">
                                 <rect key="frame" x="163" y="412" width="137" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Отправить"/>
+                                <state key="normal" title="Отправить" image="sendButton.png"/>
                             </button>
+                            <view contentMode="scaleToFill" id="L4w-84-ez6">
+                                <rect key="frame" x="55" y="111" width="210" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.87494118129999998" blue="0.1007221455" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -384,11 +382,6 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KwB-Jt-STR">
-                                <rect key="frame" x="265" y="515" width="45" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="callImage.png"/>
-                            </button>
                             <view contentMode="scaleToFill" id="cL8-KL-GeF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -398,11 +391,17 @@
                                 <rect key="frame" x="0.0" y="485" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KwB-Jt-STR">
+                                <rect key="frame" x="265" y="515" width="45" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="callImage.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.87494118129999998" blue="0.1007221455" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="qdb-Nj-qhk" id="1AJ-Vq-VL0"/>
+                        <outlet property="buttonCall" destination="KwB-Jt-STR" id="KzH-mZ-bRH"/>
                         <outlet property="callButton" destination="KwB-Jt-STR" id="A88-Ja-zBH"/>
                         <outlet property="downBarView" destination="LPp-S9-8GN" id="FGu-gx-NII"/>
                         <outlet property="imageTitle" destination="nFp-PK-nHn" id="fph-PS-ijn"/>
@@ -534,7 +533,9 @@
         <image name="callImage.png" width="167" height="170"/>
         <image name="createFotoImage.png" width="683" height="238"/>
         <image name="downBarImage.png" width="320" height="80"/>
+        <image name="haveFotoButton.png" width="274" height="140"/>
         <image name="imageButtonBack.png" width="173" height="165"/>
+        <image name="sendButton.png" width="274" height="140"/>
         <image name="topBarImage.png" width="320" height="80"/>
     </resources>
 </document>

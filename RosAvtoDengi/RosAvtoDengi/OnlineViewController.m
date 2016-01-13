@@ -81,7 +81,7 @@
 
 - (void) callButtonAction
 {
-    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+79885035228"]];
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+78007006939"]];
 }
 
 - (void) createFormButtonAction

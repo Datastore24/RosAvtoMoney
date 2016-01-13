@@ -20,6 +20,8 @@
     
     [GMSServices provideAPIKey:@"AIzaSyCYw_UiCmKuVhQk7UK0CHFphXufxzry1dU"];
     
+    sleep(1);
+    
     return YES;
 }
 

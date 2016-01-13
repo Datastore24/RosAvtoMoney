@@ -29,7 +29,7 @@
     
     
     
-    self.mainScrollView.contentSize = CGSizeMake(320, 400);
+//    self.mainScrollView.contentSize = CGSizeMake(320, 400);
     
     //Ресайзы
     
@@ -86,7 +86,7 @@
 
 - (void) callButtonAction
 {
-    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+79885035228"]];
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+78007006939"]];
 
 }
 

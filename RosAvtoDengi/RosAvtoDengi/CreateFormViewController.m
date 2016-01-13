@@ -73,6 +73,9 @@ CGFloat animatedDistance;
     
     self.downBarView.frame =CGRectMake(0, self.view.bounds.size.height-83, self.view.bounds.size.width, 83);
     
+    [self.callButton addTarget:self action:@selector(callButtonAction)
+forControlEvents:UIControlEventTouchUpInside];
+    
     
     
     
@@ -93,7 +96,7 @@ CGFloat animatedDistance;
     
     //
     
-    self.mainScrollView.contentSize = CGSizeMake(self.view.bounds.size.width, 500);
+//    self.mainScrollView.contentSize = CGSizeMake(self.view.bounds.size.width, 500);
 
     
     
@@ -351,6 +354,12 @@ numberOfRowsInComponent:(NSInteger)component
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
 {
     return 28;
+}
+
+
+- (void) callButtonAction
+{
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel:+78007006939"]];
 }
 
 @end
