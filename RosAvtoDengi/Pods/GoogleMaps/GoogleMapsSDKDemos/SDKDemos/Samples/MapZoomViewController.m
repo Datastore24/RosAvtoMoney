@@ -29,6 +29,7 @@
   _zoomRangeView.textAlignment = NSTextAlignmentCenter;
   _zoomRangeView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8f];
   _zoomRangeView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+  _zoomRangeView.editable = NO;
   [self.view addSubview:_zoomRangeView];
   [_zoomRangeView sizeToFit];
   [self didTapNext];

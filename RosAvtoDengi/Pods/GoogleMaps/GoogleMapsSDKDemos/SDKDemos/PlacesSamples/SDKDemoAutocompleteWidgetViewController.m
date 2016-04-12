@@ -4,6 +4,7 @@
 
 #import "SDKDemos/PlacesSamples/SDKDemoAutocompleteWidgetViewController.h"
 
+#import "SDKDemos/PlacesSamples/SDKDemoAutocompleteWithCustomColors.h"
 #import "SDKDemos/PlacesSamples/SDKDemoAutocompleteWithSearchController.h"
 #import "SDKDemos/PlacesSamples/SDKDemoAutocompleteWithSearchDisplayController.h"
 #import "SDKDemos/PlacesSamples/SDKDemoAutocompleteWithTextFieldController.h"
@@ -20,7 +21,9 @@ enum {
   // Implementation using UISearchDisplayController.
   kSearchDisplayController = 3,
   // Implementation using a UITextField for text entry.
-  kTextField = 4
+  kTextField = 4,
+  // Full-screen presented widget with custom colors
+  kCustomColors = 5
 };
 
 // Demo of the various ways in which GMSAutocompleteViewController can be used to provide an
@@ -43,7 +46,8 @@ enum {
                        @"Push Full-Screen",
                        @"UISearchController",
                        @"UISearchDisplayController",
-                       @"UITextField" ];
+                       @"UITextField",
+                       @"Custom Colors"];
 
   self.view.backgroundColor = [UIColor whiteColor];
 
@@ -81,8 +85,10 @@ enum {
   [self dismissFullScreenAutocompleteWidget];
   NSMutableAttributedString *text =
       [[NSMutableAttributedString alloc] initWithString:[place description]];
-  [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-  [text appendAttributedString:place.attributions];
+  if (place.attributions) {
+    [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
+    [text appendAttributedString:place.attributions];
+  }
   _resultView.attributedText = text;
 }
 
@@ -95,6 +101,14 @@ enum {
 - (void)wasCancelled:(GMSAutocompleteViewController *)viewController {
   [self dismissFullScreenAutocompleteWidget];
   _resultView.text = @"Autocomplete Cancelled.";
+}
+
+- (void)didRequestAutocompletePredictions:(GMSAutocompleteViewController *)viewController {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+- (void)didUpdateAutocompletePredictions:(GMSAutocompleteViewController *)viewController {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 #pragma mark - UITableViewDataSource
@@ -146,9 +160,15 @@ enum {
       break;
     case kTextField:
       [self.navigationController
-           pushViewController:[[SDKDemoAutocompleteWithTextFieldController alloc] init]
-                     animated:YES];
+          pushViewController:[[SDKDemoAutocompleteWithTextFieldController alloc] init]
+                    animated:YES];
       break;
+    case kCustomColors: {
+      [self.navigationController
+          pushViewController:[[SDKDemoAutocompleteWithCustomColors alloc] init]
+                    animated:YES];
+      break;
+    }
   }
 }
 

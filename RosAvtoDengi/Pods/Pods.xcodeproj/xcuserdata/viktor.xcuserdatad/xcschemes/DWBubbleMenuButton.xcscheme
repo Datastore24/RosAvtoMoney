@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AE7BCBC63A965B2641F1C457'
+               BlueprintIdentifier = 'F73A5837F7F22C015E111602'
                BlueprintName = 'DWBubbleMenuButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libDWBubbleMenuButton.a'>

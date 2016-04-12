@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AKPickerView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>DWBubbleMenuButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Motis.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,11 +32,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>027D6F12B3AEEEA476B14D1F7E499290</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>223E333715ADAEC2834CAFC0CF325C45</key>
 		<dict>
 			<key>primary</key>

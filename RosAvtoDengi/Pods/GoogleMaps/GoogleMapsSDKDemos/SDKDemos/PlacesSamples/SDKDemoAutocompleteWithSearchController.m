@@ -66,8 +66,10 @@
   [_searchController setActive:NO];
   NSMutableAttributedString *text =
       [[NSMutableAttributedString alloc] initWithString:[place description]];
-  [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-  [text appendAttributedString:place.attributions];
+  if (place.attributions) {
+    [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
+    [text appendAttributedString:place.attributions];
+  }
   _resultView.attributedText = text;
 }
 
@@ -76,6 +78,16 @@
   [_searchController setActive:NO];
   _resultView.text =
       [NSString stringWithFormat:@"Autocomplete failed with error: %@", error.localizedDescription];
+}
+
+- (void)didRequestAutocompletePredictionsForResultsController:
+    (GMSAutocompleteResultsViewController *)resultsController {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+- (void)didUpdateAutocompletePredictionsForResultsController:
+    (GMSAutocompleteResultsViewController *)resultsController {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 @end

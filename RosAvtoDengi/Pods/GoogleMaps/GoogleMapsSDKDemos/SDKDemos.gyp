@@ -53,6 +53,7 @@
         'USER_HEADER_SEARCH_PATHS': '$(SRCROOT)',
         'USE_HEADERMAP': 'NO',
         'CLANG_ENABLE_OBJC_ARC': 'YES',
+        'CODE_SIGN_IDENTITY': 'iPhone Developer',
       },
     },
   ],

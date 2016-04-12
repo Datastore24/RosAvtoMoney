@@ -65,14 +65,20 @@ static CGFloat kSearchBarHeight = 44.0f;
   return NO;
 }
 
+- (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller {
+  [_tableDataSource sourceTextHasChanged:@""];
+}
+
 #pragma mark - GMSAutocompleteTableDataSourceDelegate
 
 - (void)tableDataSource:(GMSAutocompleteTableDataSource *)tableDataSource
     didAutocompleteWithPlace:(GMSPlace *)place {
   NSMutableAttributedString *text =
       [[NSMutableAttributedString alloc] initWithString:[place description]];
-  [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-  [text appendAttributedString:place.attributions];
+  if (place.attributions) {
+    [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
+    [text appendAttributedString:place.attributions];
+  }
   _resultView.attributedText = text;
   [_searchDisplayController setActive:NO animated:YES];
 }
@@ -84,15 +90,16 @@ static CGFloat kSearchBarHeight = 44.0f;
   [_searchDisplayController setActive:NO animated:YES];
 }
 
-- (void)didUpdateAutocompletePredictionsForTableDataSource:
-    (GMSAutocompleteTableDataSource *)tableDataSource {
-  [_searchDisplayController.searchResultsTableView reloadData];
-}
-
 - (void)didRequestAutocompletePredictionsForTableDataSource:
     (GMSAutocompleteTableDataSource *)tableDataSource {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
   [_searchDisplayController.searchResultsTableView reloadData];
 }
 
+- (void)didUpdateAutocompletePredictionsForTableDataSource:
+    (GMSAutocompleteTableDataSource *)tableDataSource {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+  [_searchDisplayController.searchResultsTableView reloadData];
+}
 
 @end

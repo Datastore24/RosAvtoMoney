@@ -5,6 +5,7 @@
 #import "SDKDemos/PlacesSamples/SDKDemoPlacePickerViewController.h"
 
 #import "SDKDemos/SDKDemoAPIKey.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 
 @implementation SDKDemoPlacePickerViewController {
@@ -33,8 +34,10 @@
     if (place) {
       NSMutableAttributedString *text =
           [[NSMutableAttributedString alloc] initWithString:[place description]];
-      [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-      [text appendAttributedString:place.attributions];
+      if (place.attributions) {
+        [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
+        [text appendAttributedString:place.attributions];
+      }
       textView.attributedText = text;
     } else if (error) {
       textView.text = [NSString stringWithFormat:@"Place picking failed with error: %@", error];
@@ -52,4 +55,5 @@
   // Make links clickable.
   return YES;
 }
+
 @end

@@ -6,6 +6,9 @@
 
 #import <GoogleMaps/GoogleMaps.h>
 
+static const CGFloat kTextFieldHeight = 44.0;
+static const CGFloat kTextFieldInset = 5.0;
+
 // This demo shows how to manually present a UITableViewController and supply it with autocomplete
 // text from an arbitrary source, in this case a UITextField.
 @interface SDKDemoAutocompleteWithTextFieldController () <UITextFieldDelegate,
@@ -18,20 +21,11 @@
   UITableViewController *_resultsController;
   GMSAutocompleteTableDataSource *_tableDataSource;
   UITextView *_resultView;
-  CGRect _contentRect;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor whiteColor];
-
-  static CGFloat kTextFieldHeight = 44.0;
-  static CGFloat kTextFieldInset = 5.0;
-
-  _contentRect = CGRectMake(0,
-                            kTextFieldHeight,
-                            self.view.bounds.size.width,
-                            self.view.bounds.size.height - kTextFieldHeight);
 
   _searchField =
       [[UITextField alloc] initWithFrame:CGRectMake(kTextFieldInset,
@@ -54,7 +48,7 @@
          forControlEvents:UIControlEventEditingChanged];
   _searchField.delegate = self;
 
-  _resultView = [[UITextView alloc] initWithFrame:_contentRect];
+  _resultView = [[UITextView alloc] initWithFrame:[self contentRect]];
   _resultView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   _resultView.editable = NO;
   _resultView.text = @"Waiting...";
@@ -77,8 +71,10 @@
   [_searchField resignFirstResponder];
   NSMutableAttributedString *text =
   [[NSMutableAttributedString alloc] initWithString:[place description]];
-  [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-  [text appendAttributedString:place.attributions];
+  if (place.attributions) {
+    [text appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
+    [text appendAttributedString:place.attributions];
+  }
   _resultView.attributedText = text;
   _searchField.text = place.name;
 }
@@ -91,13 +87,15 @@
   _searchField.text = @"";
 }
 
-- (void)didUpdateAutocompletePredictionsForTableDataSource:
+- (void)didRequestAutocompletePredictionsForTableDataSource:
     (GMSAutocompleteTableDataSource *)tableDataSource {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
   [_resultsController.tableView reloadData];
 }
 
-- (void)didRequestAutocompletePredictionsForTableDataSource:
+- (void)didUpdateAutocompletePredictionsForTableDataSource:
     (GMSAutocompleteTableDataSource *)tableDataSource {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
   [_resultsController.tableView reloadData];
 }
 
@@ -105,9 +103,11 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
   [self addChildViewController:_resultsController];
-  _resultsController.view.frame = _contentRect;
+  _resultsController.view.frame = [self contentRect];
   _resultsController.view.alpha = 0.0f;
   [self.view addSubview:_resultsController.view];
+  [_resultsController.tableView reloadData];
+  [self.view layoutIfNeeded];
   [UIView animateWithDuration:0.5
                    animations:^{
                      _resultsController.view.alpha = 1.0f;
@@ -136,6 +136,11 @@
 
 - (void)textFieldDidChange:(UITextField *)textField {
   [_tableDataSource sourceTextHasChanged:textField.text];
+}
+
+- (CGRect)contentRect {
+  return CGRectMake(0, kTextFieldHeight, self.view.bounds.size.width,
+                    self.view.bounds.size.height - kTextFieldHeight);
 }
 
 @end
